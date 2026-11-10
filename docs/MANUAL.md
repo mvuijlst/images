@@ -2,9 +2,9 @@
 
 How to use the desktop app, the image screensaver, the day movie and the command line. To install, see [SETUP.md](SETUP.md).
 
-## Desktop app
+## Desktop app (Images)
 
-Double-click **`DALL·E Mega.lnk`** (made by `make_shortcuts.py`, see [SETUP.md](SETUP.md)) or run `uv run app.pyw`.
+Double-click **`Images.lnk`** (made by `make_shortcuts.py`, see [SETUP.md](SETUP.md)) or run `uv run app.pyw`.
 The last-used model loads in the background; type a prompt and press Enter.
 
 - **Model**: DALL·E Mega or Stable Diffusion 1.5. Only one is kept in GPU memory, so switching costs a

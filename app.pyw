@@ -1,6 +1,6 @@
-"""DALL·E Mega desktop app (PySide6).
+"""Images: desktop app for DALL·E Mega and Stable Diffusion 1.5 (PySide6).
 
-Launch with the "DALL·E Mega" shortcut, or:  uv run app.pyw
+Launch with the "Images" shortcut, or:  uv run app.pyw
 """
 
 import ctypes
@@ -61,7 +61,7 @@ from PySide6.QtWidgets import (
 
 from sd_engine import DEFAULT_CFG, DEFAULT_STEPS, SAMPLERS, output_size  # light: diffusers loads with the model
 
-APP_NAME = "DALL·E Mega"
+APP_NAME = "Images"
 OUTPUTS = HERE / "outputs"
 ICON_PATH = HERE / "icon.ico"
 SIZES = [256, 512, 768, 1024, 1536, 2048]  # short side; keep in sync with dalle_core.SIZES
@@ -384,7 +384,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle(APP_NAME)
         if ICON_PATH.exists():
             self.setWindowIcon(QIcon(str(ICON_PATH)))
-        self.settings = QSettings("zog", "DALL-E Mega")
+        self.settings = QSettings("zog", "DALL-E Mega")  # old name kept: it is where the saved settings live
         self.busy = False
         self.ready = False
         self.current_item: QListWidgetItem | None = None

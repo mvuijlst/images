@@ -1,4 +1,4 @@
-# DALL·E Mega + Stable Diffusion 1.5, locally
+# Images: DALL·E Mega + Stable Diffusion 1.5, locally
 
 <img src="icon.png" alt="App icon, drawn by DALL·E Mega" width="128" align="right">
 
@@ -14,7 +14,7 @@ command line and a full-screen "screensaver" that paints the world outside as it
 
 ## What's in it
 
-- **Desktop app** (`app.pyw`, PySide6): prompt, model, shape, batch size, seed, sampler, live preview,
+- **Desktop app**, "Images" (`app.pyw`, PySide6): prompt, model, shape, batch size, seed, sampler, live preview,
   AI upscaling (Real-ESRGAN) up to 2048 px, a strip of this session's batches. Every image is saved as PNG
   with its prompt and settings in the metadata.
 - **Image screensaver** (`screensaver.pyw`): a slow full-screen slideshow of images made on the spot from
