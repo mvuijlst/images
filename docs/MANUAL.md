@@ -292,7 +292,9 @@ GPU memory: check Task Manager → Performance → GPU → Dedicated GPU memory.
 - `download_weights.py`: weight downloader and verifier
 - `screensaver_settings.py`: the screensaver's settings window and settings file (runs on its own too)
 - `make_shortcuts.py`: creates the double-click shortcuts (Windows)
-- `icon.ico`, `icon.png`: app icon (drawn by DALL·E Mega itself)
+- `icon.ico`, `icon.png`: the Images icon (drawn by DALL·E Mega itself); `icon_screensaver`, `icon_movie`,
+  `icon_settings` (`.ico`, `.png`): the same palette in the other programs' colours, with a moon, a film
+  frame or a gear, made from it by `make_icons.py`
 
 Note for changes to `app.pyw`: `torch` must be imported before PySide6, or generation crashes with
 heap corruption (PySide6 ships an older MSVC runtime/OpenMP that conflicts with torch's).

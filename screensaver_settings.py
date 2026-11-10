@@ -27,7 +27,8 @@ import realworld  # noqa: E402  light: requests; no models
 APP_NAME = "Image Screensaver"
 SETTINGS_PATH = HERE / "screensaver_settings.json"
 SAVE_DIR = HERE / "outputs" / "screensaver"  # default; settings can change it
-ICON_PATH = HERE / "icon.ico"
+ICON_PATH = HERE / "icon_screensaver.ico"  # each program has its own colour of the icon (make_icons.py)
+SETTINGS_ICON_PATH = HERE / "icon_settings.ico"
 MAX_SHORT_SIDE = 2048  # no more than the 4× upscaler can genuinely add (512 × 4)
 # image size: key → (menu text, times the screen's resolution)
 RESOLUTIONS = {
@@ -210,8 +211,8 @@ class SettingsDialog(QDialog):
     def __init__(self, cfg: dict, parent=None, mode: str = "first"):
         super().__init__(parent)
         self.setWindowTitle(f"{APP_NAME} settings")
-        if ICON_PATH.exists():
-            self.setWindowIcon(QIcon(str(ICON_PATH)))
+        if SETTINGS_ICON_PATH.exists():
+            self.setWindowIcon(QIcon(str(SETTINGS_ICON_PATH)))
         self.cfg = dict(cfg)
         self.mode = mode
         self.start_after = False
@@ -674,6 +675,8 @@ def main() -> None:
         ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("zog.dallemega.screensaver.settings")
     app = QApplication(sys.argv)
     app.setApplicationName(f"{APP_NAME} settings")
+    if SETTINGS_ICON_PATH.exists():
+        app.setWindowIcon(QIcon(str(SETTINGS_ICON_PATH)))
     dlg = SettingsDialog(load_settings(), mode="standalone")
     if dlg.exec() != QDialog.DialogCode.Accepted:
         return

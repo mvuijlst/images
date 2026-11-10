@@ -38,9 +38,10 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDoubleSpinBo
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-from screensaver_settings import ICON_PATH, clock_text, load_settings, save_root  # noqa: E402
+from screensaver_settings import clock_text, load_settings, save_root  # noqa: E402
 
 APP_NAME = "Image Movie"
+ICON_PATH = HERE / "icon_movie.ico"
 TRANSITIONS = {"dissolve": "Dissolve", "black": "Fade through black", "slide": "Slide", "wipe": "Soft wipe",
                "cut": "Cut"}
 SHOWS = ("weather", "clock", "caption", "prompt")
@@ -911,6 +912,8 @@ def main() -> None:
             ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("zog.dallemega.moviemaker")
         app = QApplication(sys.argv[:1])
         app.setApplicationName(APP_NAME)
+        if ICON_PATH.exists():
+            app.setWindowIcon(QIcon(str(ICON_PATH)))
         w = Window()
         w.resize(820, 860)
         w.show()
