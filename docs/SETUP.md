@@ -13,7 +13,7 @@ screensaver and the shortcuts use Windows features.
 | Disk | ≈ 9 GB for the model weights, plus room for images (the screensaver saves ≈ 0.6 GB per day of non-stop running; you can switch that off) |
 | [uv](https://docs.astral.sh/uv/) | installs Python 3.12 and all packages; you don't need Python yourself |
 | [Ollama](https://ollama.com) | optional: for the screensaver's random words, the "no text" check and the "words must show" check |
-| [ffmpeg](https://ffmpeg.org) | optional: only for `daymovie.py` |
+| [ffmpeg](https://ffmpeg.org) | optional: only for Image Movie (`moviemaker.py`, `daymovie.py`) |
 
 ## Install
 
@@ -68,13 +68,14 @@ ollama pull qwen3.5:2b
 The model has to understand images for the "no text" and "words must show" checks; `qwen3.5:2b` does.
 Another model can be set in the screensaver's settings. Everything runs locally.
 
-## Optional: ffmpeg (day movie)
+## Optional: ffmpeg (movies)
 
 ```bash
 winget install Gyan.FFmpeg
 ```
 
-Open a new terminal afterwards so `ffmpeg` is on the PATH.
+Open a new terminal afterwards so `ffmpeg` is on the PATH. Or skip the PATH: Image Movie lets you choose
+`ffmpeg.exe` (`--ffmpeg PATH` on the command line).
 
 ## First start of the screensaver
 

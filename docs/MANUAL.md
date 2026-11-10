@@ -1,6 +1,6 @@
 # Manual
 
-How to use the desktop app, the image screensaver, the day movie and the command line. To install, see [SETUP.md](SETUP.md).
+How to use the desktop app, the image screensaver, Image Movie and the command line. To install, see [SETUP.md](SETUP.md).
 
 ## Desktop app (Images)
 
@@ -191,16 +191,45 @@ both load a model into the same GPU, and together they are slow. Log: `screensav
 Command line: `uv run screensaver.pyw --settings` (open settings first), `--monitor 2` (that monitor);
 `uv run screensaver_settings.py` (settings only).
 
-**Day movie.** `uv run daymovie.py [2026-11-06]` turns a day folder (default: the latest) into an MP4
-next to it (`outputs\screensaver\2026-11-06.mp4`), with ffmpeg. Every frame is drawn the way the
-screensaver draws it: the same caption band, clock and crossfade, at the saved images' resolution
-(1600 × 960). The clock shows when each image was made. A whole day fits in `--length` (default 2:55):
-each image gets that length divided by the number of images, at most `--seconds` (2), so a full day of
-~1300 images runs as a time-lapse at ~0.13 s per image, and a short day at 2 s per image. The crossfade
-is at most `--fade` (0.5 s) and a quarter of an image's time; a caption identical to the previous one
-stays put through the fade instead of dipping (at time-lapse speed that would flicker). Other options:
-`--fps 30`, `--no-captions`, `--no-clock`, `--prompt`, `--crf 18`, `--out FILE`.
-If you change how the screensaver draws its caption or clock, change `daymovie.py` the same way.
+## Image Movie
+
+Turns a folder of screensaver images (each `.jpg` with its `.json`) into an MP4, with smooth transitions and
+the weather and time drawn the way the screensaver draws them. Double-click **`Image Movie.lnk`** or run
+`uv run moviemaker.py`; it opens on the latest day. Needs [ffmpeg](SETUP.md#optional-ffmpeg-movies): found
+on the PATH, or choose `ffmpeg.exe`.
+
+- **Images from**: a day folder, `favorites`, or a folder of days with *Include subfolders*.
+- **Length**: default 3:00. **Images**: a day is ~1300 images, which in 3 minutes is 0.13 s each: too fast
+  for any transition. So by default as many are taken as fit with about 2 s each (90 in 3 minutes), spread
+  evenly over the time they cover (one every ~16 minutes of a day), first and last included. *Every image*
+  keeps them all, as a time-lapse. The window says how many it takes and how often.
+- **Transition**: Dissolve (default), Fade through black, Slide, Soft wipe or Cut, 0.8 s by default. *Slow
+  zoom and pan* (on by default) moves every picture gently, zooming in and out in turn, continuing through
+  the transitions.
+- **Size**: the images' own (1600 × 960 for an 800 × 480 screen), 720p, 1080p, 1440p or 4K (filled and
+  cropped to the shape); 24, 25, 30 or 60 fps.
+- **Show**: weather ("In Ghent · 5 °C · clear sky · night") and time and date (when the image was made),
+  both on by default; the screensaver's own caption (the words, the headline…); the prompt. Text that stays
+  the same from one image to the next stays put; other text fades out, then the new text fades in.
+- **Save as**: default `<folder>.mp4` next to the folder. The preview shows the middle of the first
+  transition with your choices; then *Make movie*, with a progress bar, *Cancel*, *Play* and *Show in
+  folder*.
+
+From the command line:
+
+```bash
+uv run moviemaker.py outputs/screensaver/2026-11-09
+uv run moviemaker.py outputs/screensaver/2026-11-09 --length 1:30 --size 1080p --transition slide
+uv run moviemaker.py outputs/screensaver --recursive --show weather,clock,caption --ffmpeg C:/tools/ffmpeg.exe
+```
+
+Options: `--out FILE`, `--size WxH|720p|1080p|1440p|4k`, `--length m:ss`, `--every-image`, `--seconds 2`,
+`--transition dissolve|black|slide|wipe|cut`, `--transition-seconds 0.8`, `--no-zoom`,
+`--show weather,clock,caption,prompt` (or `none`), `--fps 30`, `--crf 18`, `--ffmpeg PATH`, `--recursive`.
+
+`uv run daymovie.py [2026-11-06]` is the older short form: every image of a day (default: the latest) as a
+time-lapse with the screensaver's caption and clock, `--length` 2:55 at most 2 s an image, `--fade 0.5`.
+If you change how the screensaver draws its caption or clock, change `moviemaker.py` the same way.
 
 ## Command line
 
@@ -251,7 +280,8 @@ GPU memory: check Task Manager → Performance → GPU → Dedicated GPU memory.
 - `screensaver.pyw`: full-screen real-world image generator
 - `realworld.py`: weather / three words / news / on-this-day sources and prompt building
 - `hourlight.py`: grades images to the light of the hour (night, dusk, dawn, golden hour)
-- `daymovie.py`: a movie of one day of screensaver images, frames as on screen
+- `moviemaker.py`: Image Movie, a movie from a folder of screensaver images (window and command line)
+- `daymovie.py`: the short command for one day as a time-lapse (uses moviemaker.py)
 - `words.txt`, `scene_parts.txt`, `llm_prompt.txt`: word list, scene parts and LLM instructions for the
   three-words source (plain text, edit freely)
 - `screensaver_bags.json`: which list items were already used this round (delete to start over)

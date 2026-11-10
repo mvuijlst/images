@@ -1,4 +1,5 @@
-"""Create the double-click shortcuts (Windows): `Images.lnk`, `Image Screensaver.lnk` and `Screensaver Settings.lnk`.
+"""Create the double-click shortcuts (Windows): `Images.lnk`, `Image Screensaver.lnk`,
+`Screensaver Settings.lnk` and `Image Movie.lnk`.
 
 They start the app and the screensaver with this folder's .venv\\Scripts\\pythonw.exe (no console window).
 Run after `uv sync`:  uv run make_shortcuts.py   (add --desktop to put them on the desktop instead)
@@ -10,7 +11,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 SHORTCUTS = {"Images": "app.pyw", "Image Screensaver": "screensaver.pyw",
-             "Screensaver Settings": "screensaver_settings.py"}
+             "Screensaver Settings": "screensaver_settings.py", "Image Movie": "moviemaker.py"}
 
 
 def main() -> None:

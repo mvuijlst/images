@@ -22,8 +22,8 @@ command line and a full-screen "screensaver" that paints the world outside as it
   local LLM, current headlines (as allegories) and "on this day" anniversaries. Night looks like night,
   images with stray text are redrawn, names of people and organisations are kept out of the prompts.
   Every image is saved with a JSON sidecar describing where it came from.
-- **Day movie** (`daymovie.py`): one day of screensaver images as an MP4 time-lapse, frames drawn as on
-  screen.
+- **Image Movie** (`moviemaker.py`): a folder of screensaver images as an MP4, with dissolves, a slow
+  zoom, and the weather and time as the screensaver shows them.
 - **Command line** (`generate.py`): one-off or interactive generation with all the app's options.
 
 ## Quick start
@@ -31,7 +31,7 @@ command line and a full-screen "screensaver" that paints the world outside as it
 ```bash
 uv sync                               # Python 3.12 + CUDA PyTorch and the rest
 uv run download_weights.py --all      # ≈ 8 GB of weights into pretrained/
-uv run make_shortcuts.py              # shortcuts: Images, Image Screensaver, Screensaver Settings
+uv run make_shortcuts.py              # shortcuts: Images, Image Screensaver, Screensaver Settings, Image Movie
 uv run generate.py "a watercolor painting of a lighthouse at dusk" --open
 ```
 
