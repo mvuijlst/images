@@ -319,18 +319,18 @@ infrared photograph
 long exposure night photograph
 cinematic film still
 Flemish primitive oil painting, jewel colours, minute detail, luminous glaze
-Pieter Bruegel the Elder style painting
-Rubens style baroque painting
+in the style of Pieter Bruegel the Elder
+in the style of Peter Paul Rubens
 Dutch golden age painting
-Vermeer style painting
-James Ensor style painting, carnival masks, acid colours, crowded
-René Magritte style surrealist painting
-Paul Delvaux style painting, moonlit classical streets, dreamlike stillness
-Léon Spilliaert style ink wash, dark empty seafront, black and grey
-Emile Claus style luminist painting, sunlight dappled on fields, glowing
-Théo van Rysselberghe style pointillist painting, mosaic of colour dots
+in the style of Jan Vermeer
+in the style of James Ensor
+in the style of René Magritte
+in the style of Paul Delvaux
+in the style of Léon Spilliaert
+in the style of Emile Claus
+in the style of Théo van Rysselberghe
 Flemish expressionist painting, heavy earthy forms, dark outlines
-Rik Wouters style fauvist painting, bright patches of colour, white canvas showing
+in the style of Rik Wouters
 impressionist oil painting
 post-impressionist painting
 pointillist painting
@@ -354,17 +354,17 @@ gouache illustration
 acrylic painting
 plein-air oil sketch
 tonalist painting
-Atkinson Grimshaw style moonlit painting
-Whistler style nocturne
-Edward Hopper style painting
-Canaletto style cityscape
-Caspar David Friedrich style painting
-Vincent van Gogh style painting
-Claude Monet style painting
-Gustav Klimt style painting
-Vilhelm Hammershøi style painting
-Hiroshige style woodblock print
-Hokusai style woodblock print
+in the style of John Atkinson Grimshaw
+in the style of James McNeill Whistler
+in the style of Edward Hopper
+in the style of Canaletto
+in the style of Caspar David Friedrich
+in the style of Vincent Van Gogh
+in the style of Claude Monet
+in the style of Gustav Klimt
+in the style of Vilhelm Hammershøi
+in the style of Utagawa Hiroshige
+in the style of Hokusai
 Japanese woodblock print
 German expressionist woodcut
 linocut print
@@ -857,80 +857,80 @@ circular frame
 letterbox framing
 
 ## styles
-Jan van Eyck style painting, jewel colours, mirror-sharp detail, oil glaze
-Hieronymus Bosch style painting, swarming tiny fantastical creatures
-Hans Memling style painting, serene, clear light, fine detail
-Rogier van der Weyden style painting, sculptural folds, gold and crimson
-Jacob Jordaens style painting, boisterous feast, warm flesh tones
-Anthony van Dyck style painting
-David Teniers style tavern painting, brown interior, small lively figures
-Jan Brueghel style painting, tiny detailed figures, blue distant landscape
-Frans Hals style painting
-Rembrandt style painting
-Jan Steen style painting
-Pieter de Hooch style painting
-Hendrick Avercamp style winter painting, frozen canal, many tiny skaters
-Jacob van Ruisdael style landscape
-Constant Permeke style painting, massive dark earthy figures, thick paint
-Gustave Van de Woestyne style painting, mystical, elongated, muted colour
-Valerius de Saedeleer style landscape, bare trees, snowy fields, high horizon, silent
-Fernand Khnopff style symbolist painting, pale, silent, enigmatic
-Constantin Meunier style painting, coal miners, dark industrial realism
-Edgard Tytgat style naive painting, toy-like figures, fairground colours
-Jean Brusselmans style painting, flat geometric landscape, hard outlines
-Frits Van den Berghe style painting, surreal, dark glowing colours, distorted
-Gustave De Smet style painting, cubist village, warm ochre, simplified forms
-Anna Boch style painting, bright impressionist sunlight, coastal colour
-Alfred Stevens style painting, elegant salon interior, silk dresses
-Victor Horta style art nouveau interior, iron whiplash curves, mosaic floors
-J. M. W. Turner style painting
-John Constable style painting
-John Singer Sargent style painting
-Joaquín Sorolla style painting
-Anders Zorn style painting
-Isaac Levitan style painting
-Wassily Kandinsky style painting
-Paul Klee style painting
-Marc Chagall style painting
-Joan Miró style painting
-Henri Matisse style painting
-Pierre Bonnard style painting
-Édouard Vuillard style painting
-Henri de Toulouse-Lautrec style painting
-Paul Cézanne style painting
-Pierre-Auguste Renoir style painting
-Edgar Degas style pastel
-Camille Pissarro style painting
-Alfred Sisley style painting
-Gustave Caillebotte style painting
-Edvard Munch style painting
-Egon Schiele style drawing
-Ernst Ludwig Kirchner style painting
-Franz Marc style painting
-August Macke style painting
-Lyonel Feininger style painting
-Giorgio de Chirico style painting
-Salvador Dalí style painting
-M. C. Escher style print
-Henri Rousseau style painting
-Amedeo Modigliani style painting
-Norman Rockwell style painting
-Grant Wood style painting
-Piet Mondrian style painting
-Kazimir Malevich style painting
-Hasui Kawase style shin-hanga print
-Utagawa Kuniyoshi style print
-Ito Jakuchu style painting
-Kay Nielsen style illustration
-Arthur Rackham style illustration
-Edmund Dulac style illustration
-John Bauer style illustration
-Ivan Bilibin style illustration
-Beatrix Potter style watercolour
-Carl Larsson style watercolour
-Ernest Shepard style drawing
-Mary Blair style illustration
-Tove Jansson style illustration
+in the style of Jan van Eyck
+in the style of Hieronymus Bosch
+in the style of Hans Memling
+in the style of Rogier van der Weyden
+in the style of Jacob Jordaens
+in the style of Anthonis van Dyck
+in the style of David Teniers
+in the style of Jan Brueghel
+in the style of Frans Hals
+in the style of Rembrandt
+in the style of Jan Steen
+in the style of Pieter de Hooch
+in the style of Hendrick Avercamp
+in the style of Jacob van Ruisdael
+in the style of Constant Permeke
+in the style of Gustave Van de Woestyne
+in the style of Valerius de Saedeleer
+in the style of Fernand Khnopff
+in the style of Constantin Meunier
+in the style of Edgard Tytgat
+in the style of Jean Brusselmans
+in the style of Frits Van den Berghe
+in the style of Gustave De Smet
+in the style of Anna Boch
+in the style of Alfred Stevens
+in the style of Victor Horta
+in the style of William Turner
+in the style of John Constable
+in the style of John Singer Sargent
+in the style of Joaquín Sorolla
+in the style of Anders Zorn
+in the style of Isaac Levitan
+in the style of Wassily Kandinsky
+in the style of Paul Klee
+in the style of Marc Chagall
+in the style of Joan Miró
+in the style of Henri Matisse
+in the style of Pierre Bonnard
+in the style of Édouard Vuillard
+in the style of Henri de Toulouse-Lautrec
+in the style of Paul Cézanne
+in the style of Pierre-Auguste Renoir
+in the style of Edgar Degas
+in the style of Camille Pissarro
+in the style of Alfred Sisley
+in the style of Gustave Caillebotte
+in the style of Edvard Munch
+in the style of Egon Schiele
+in the style of Ernst Ludwig Kirchner
+in the style of Franz Marc
+in the style of August Macke
+in the style of Lyonel Feininger
+in the style of Giorgio de Chirico
+in the style of Salvador Dalí
+in the style of Maurits Cornelis Escher
+in the style of Henri Rousseau
+in the style of Amedeo Modigliani
+in the style of Norman Rockwell
+in the style of Grant Wood
+in the style of Piet Mondrian
+in the style of Kazimir Malevich
+in the style of Kawase Hasui
+in the style of Utagawa Kuniyoshi
+in the style of Ito Jakuchu
+in the style of Kay Nielsen
+in the style of Arthur Rackham
+in the style of Edmund Dulac
+in the style of John Bauer
+in the style of Ivan Bilibin
+in the style of Beatrix Potter
+in the style of Carl Larsson
+in the style of Ernest Howard Shepard
+in the style of Mary Blair
+in the style of Tove Jansson
 egg tempera on gold leaf
 gold leaf icon painting
 encaustic painting
@@ -1105,13 +1105,13 @@ two-colour linocut print, bold carved lines, flat red and black
 three-colour woodcut, visible wood grain, flat ink
 reduction linocut, layered flat colours, carved texture
 Swiss wood engraving, fine parallel lines, black and white
-Gustave Doré style engraving, dramatic cross-hatching
-Piranesi style etching, vast architecture, deep shadows
-Albrecht Dürer style engraving, precise hatching
-Hans Holbein style woodcut, crisp outlines
-Félix Vallotton style woodcut, solid black shapes
-Frans Masereel style woodcut, stark black and white
-Käthe Kollwitz style charcoal lithograph
+in the style of Gustave Doré
+in the style of Piranesi
+in the style of Albrecht Dürer
+in the style of Hans Holbein
+in the style of Félix Vallotton
+in the style of Frans Masereel
+in the style of Käthe Kollwitz
 monotype print, soft painterly ink blots
 collagraph print, rough textured surfaces
 chine-collé print on thin coloured paper
@@ -1119,17 +1119,15 @@ cyanotype photogram, white silhouettes on Prussian blue
 blind embossed paper relief, white on white
 stencil print, sprayed edges, two colours
 Japanese mokuhanga print, soft gradated colour, bokashi sky
-Kawase Hasui style night print, deep indigo, glowing lanterns
-Yoshida Hiroshi style woodblock print, calm water, soft light
-Ohara Koson style kacho-e print, birds and branches
-Utagawa Hiroshige style rain print, slanting lines
+in the style of Hiroshi Yoshida
+in the style of Ohara Koson
 Chinese New Year print, bright folk colours, bold outlines
 Russian lubok print, naive hand-coloured woodcut
 Mexican papel picado style cut paper, bright tissue colours
 Polish wycinanki paper cut, symmetrical bright folk shapes
 silkscreen print, offset colour layers, halftone dots
-Andy Warhol style silkscreen, garish flat colour blocks
-Roy Lichtenstein style painting, Ben-Day dots, thick black outlines
+in the style of Andy Warhol
+in the style of Roy Lichtenstein
 risograph print, grainy fluorescent pink and teal, misregistered
 duotone print, deep blue and orange
 halftone newspaper photograph, coarse black dots
@@ -1153,78 +1151,62 @@ felt-tip marker drawing, saturated flat colour
 biro doodle in the margin of a notebook, blue ink
 courtroom sketch, quick pastel strokes
 fashion illustration, elegant gouache and ink
-Edward Gorey style pen drawing, gloomy fine hatching
-Quentin Blake style illustration, scratchy ink and loose watercolour
-Ronald Searle style drawing, spiky ink lines
-Sempé style drawing, tiny figures, vast airy space
-Saul Steinberg style line drawing
-Aubrey Beardsley style illustration, black ink, flowing curves
-Harry Clarke style illustration, intricate jewel-like detail
-Heinrich Kley style ink drawing
-Moebius style comic art, clean lines, pale desert colours
-Hergé style ligne claire drawing, flat colours, clean outlines
+in the style of Edward Gorey
+in the style of Quentin Blake
+in the style of Ronald Searle
+in the style of Sempé
+in the style of Saul Steinberg
+in the style of Aubrey Beardsley
+in the style of Harry Clarke
+in the style of Heinrich Kley
+in the style of Moebius
+in the style of Hergé
 Franco-Belgian bande dessinée art, warm flat colour
-François Schuiten style drawing, monumental architecture, fine hatching
-Mike Mignola style comic art, heavy black shadows, flat colour
-Frank Miller style black and white comic, stark contrast
-Jack Kirby style comic art, dynamic cosmic energy
+in the style of François Schuiten
+in the style of Mike Mignola
+in the style of Frank Miller
+in the style of Jack Kirby
 underground comix, crosshatched ink, 1970s
-Chris Ware style drawing, precise flat colour, geometric
+in the style of Chris Ware
 manga illustration, screentone shading, black and white
 shoujo manga illustration, sparkling eyes, soft pastel
 gekiga manga, gritty ink, realistic
 # painting, by look
-Eyvind Earle style painting, stylised trees, rich gradients
-Charley Harper style illustration, geometric flat wildlife
-Mary Blair style concept art, bold flat colour, whimsical
-Simon Stålenhag style painting, muted Scandinavian landscape
-Greg Rutkowski style fantasy painting, dramatic light
-Alphonse Mucha style art nouveau, flowing hair, ornamental halo
-Tamara de Lempicka style painting, glossy art deco forms
-Georgia O'Keeffe style painting, smooth enlarged forms
-Andrew Wyeth style tempera, pale grass, quiet melancholy
-Edward Hopper style painting, empty light, long shadows
-Wayne Thiebaud style painting, thick creamy paint, bright shadows
-David Hockney style painting, flat bright colour, swimming pool blue
-Alex Katz style painting, flat colour, simplified forms
-Fernand Léger style painting, tubular forms, primary colours
-Sonia Delaunay style painting, colour circles
-Hilma af Klint style painting, spirals and petals, pastel geometry
-Friedensreich Hundertwasser style painting, wavy lines, onion domes, bright colours
-Gustav Klimt style golden painting, gold leaf, mosaic patterns
-Egon Schiele style painting, angular lines, raw colour
-Amedeo Modigliani style portrait, elongated faces
-Paul Gauguin style painting, flat tropical colour, dark outlines
-Henri Rousseau style jungle painting, dense leaves, naive
-Diego Rivera style mural, rounded figures, earthy colour
-Frida Kahlo style painting, folk symbolism, vivid colour
-Tarsila do Amaral style painting, rounded hills, warm colour
-Jacob Lawrence style painting, flat angular shapes, gouache
-Romare Bearden style collage, cut paper and paint
-Keith Haring style drawing, bold outlined dancing figures
-Jean-Michel Basquiat style painting, scrawled raw shapes
-Yayoi Kusama style painting, polka dots everywhere
-Bridget Riley style op art, rippling stripes
-Victor Vasarely style op art, bulging grid
-Wassily Kandinsky style composition, circles and lines
-Joan Miró style painting, floating black shapes, primary dots
-Paul Klee style painting, small coloured squares, childlike signs
-Marc Chagall style painting, floating figures, blue night
-Lyonel Feininger style painting, crystalline prisms of light
-Giorgio Morandi style still life, dusty muted bottles
-René Magritte style painting, clean sky, impossible objects
-Zdzisław Beksiński style painting, dusty dreamlike ruins
-Ivan Aivazovsky style seascape, luminous waves
-Albert Bierstadt style painting, golden haze, vast valley
-Thomas Cole style painting, romantic wilderness
-Arkhip Kuindzhi style painting, glowing moonlight
-Isaac Levitan style painting, quiet Russian landscape
-John Atkinson Grimshaw style painting, wet lamplit street at dusk
-Childe Hassam style painting, flag-lined street, impressionist
-Gustave Caillebotte style painting, wet cobblestones, wide perspective
-Henri Le Sidaner style painting, glowing windows at twilight
-Ilya Repin style painting, vivid realism
-Sorolla style painting, dazzling Mediterranean sunlight
+in the style of Eyvind Earle
+in the style of Charley Harper
+in the style of Simon Stålenhag
+in the style of Greg Rutkowski
+in the style of Alfons Mucha
+in the style of Tamara de Lempicka
+in the style of Georgia O'Keeffe
+in the style of Andrew Wyeth
+in the style of Wayne Thiebaud
+in the style of David Hockney
+in the style of Alex Katz
+in the style of Fernand Léger
+in the style of Sonia Delaunay
+in the style of Hilma af Klint
+in the style of Friedensreich Hundertwasser
+in the style of Paul Gauguin
+in the style of Diego Rivera
+in the style of Frida Kahlo
+in the style of Tarsila do Amaral
+in the style of Jacob Lawrence
+in the style of Romare Bearden
+in the style of Keith Haring
+in the style of Jean-Michel Basquiat
+in the style of Yayoi Kusama
+in the style of Bridget Riley
+in the style of Victor Vasarely
+in the style of Giorgio Morandi
+in the style of Zdzisław Beksiński
+in the style of Ivan Aivazovsky
+in the style of Albert Bierstadt
+in the style of Thomas Cole
+in the style of Arkhip Kuindzhi
+in the style of Childe Hassam
+in the style of Henri Le Sidaner
+in the style of Ilya Repin
 # painting, by medium
 thick impasto oil painting, palette-knife ridges
 alla prima oil painting, loose wet-on-wet brushwork
@@ -1251,10 +1233,10 @@ Khokhloma painting, gold and red on black
 Dutch Hindeloopen painting, folk flowers
 Pennsylvania dutch folk painting, flat stylised
 American folk art painting, flat naive perspective
-Grandma Moses style painting, naive village life
-Maud Lewis style painting, cheerful naive colour
-Bob Ross style landscape, happy little trees, wet-on-wet
-Thomas Kinkade style painting, glowing cottage windows
+in the style of Grandma Moses
+in the style of Maud Lewis
+in the style of Bob Ross
+in the style of Thomas Kinkade
 reverse glass painting, glossy bright colour
 enamel paint on tin, folk retablo
 Chinese gongbi painting, fine lines, delicate colour
@@ -1312,7 +1294,7 @@ photograph through frosted glass
 photograph through a rainy window, bokeh
 reflection photograph in a shop window, layered
 motion blur photograph, panning
-Wes Anderson style film still, symmetrical, pastel colour
+in the style of Wes Anderson
 Wong Kar-wai style film still, smeared neon, step-printed blur
 Stanley Kubrick style film still, one-point perspective
 Andrei Tarkovsky style film still, wet, misty, muted green
@@ -1332,8 +1314,8 @@ Ingmar Bergman style film still, stark black and white, northern light
 David Lynch style film still, red curtains, uncanny
 Twin Peaks style still, misty pine forest, diner light
 Studio Ghibli style film still, painted clouds, cosy detail
-Makoto Shinkai style anime still, glowing sky, lens flare
-Satoshi Kon style anime still, sharp realism
+in the style of Makoto Shinkai
+in the style of Satoshi Kon
 1980s cel anime, hand-painted backgrounds, VHS colour
 Cartoon Saloon style animation, flat Celtic shapes
 Disney 1950s background painting, Eyvind Earle trees
@@ -1369,15 +1351,15 @@ corporate flat illustration, purple and pastel
 glitch art, datamoshed pixels, RGB split
 neon synthwave grid, magenta and cyan
 vaporwave collage, marble busts, pink and teal
-cyberpunk neon cityscape style, rain and holograms
+in the style of cyberpunk neon cityscape
 solarpunk illustration, green and gold, bright
 steampunk illustration, brass and gears
 dieselpunk painting, smoky industrial art deco
 art deco streamline moderne illustration, chrome curves
 retro-futurism 1950s illustration, rocket age optimism
-Syd Mead style futurist illustration, sleek vehicles
+in the style of Syd Mead
 1970s sci-fi paperback art, airbrushed space
-Roger Dean style painting, floating islands, organic arches
+in the style of Roger Dean
 # crafts and materials
 knitted wool scene, chunky stitches
 crochet amigurumi figures, yarn texture
@@ -1397,7 +1379,7 @@ paper quilling, rolled paper strips
 pop-up book, folded paper layers
 kirigami, cut and folded white paper
 cut paper shadow box, layered silhouettes, backlit
-Lotte Reiniger style silhouette animation, black paper on colour
+in the style of Lotte Reiniger
 shadow puppet theatre, backlit translucent leather
 Javanese wayang puppet, intricate perforated leather
 paper mâché sculpture, painted newspaper
@@ -1415,7 +1397,7 @@ Japanese maki-e, gold dust on black lacquer
 cloisonné enamel, thin gold wire, bright fills
 champlevé enamel on copper
 Limoges painted enamel
-Fabergé egg style, jewels and gold
+in the style of Fabergé egg
 stained glass, thick lead lines, glowing colour
 Tiffany lamp glass, dragonflies and amber light
 Venetian murano glass, swirled colour
@@ -1460,20 +1442,17 @@ Czech 1970s illustration, whimsical, textured
 Polish school illustration, surreal, painterly
 Japanese 1970s picture book illustration
 Golden Books style illustration, 1950s
-Richard Scarry style busy town illustration
-Beatrix Potter style watercolour, small animals
-E. H. Shepard style ink and watercolour
-Maurice Sendak style crosshatched illustration
-Tove Jansson style ink illustration, Moomin valley
-Jon Klassen style illustration, muted textured flat shapes
-Oliver Jeffers style illustration, loose and gentle
-Shaun Tan style painting, quiet surreal
-Brian Wildsmith style illustration, jewel-like colour patches
-Eric Carle style collage, painted tissue paper
-Leo Lionni style collage, torn paper
-Ezra Jack Keats style collage, patterned paper
-Dr. Seuss style illustration, curvy impossible architecture
-Hayao Miyazaki style watercolour storyboard
+in the style of Richard Scarry
+in the style of Maurice Sendak
+in the style of Jon Klassen
+in the style of Oliver Jeffers
+in the style of Shaun Tan
+in the style of Brian Wildsmith
+in the style of Eric Carle
+in the style of Leo Lionni
+in the style of Ezra Jack Keats
+in the style of Dr. Seuss
+in the style of Hayao Miyazaki
 William Morris wallpaper pattern, intertwined leaves and birds
 Arts and Crafts wood engraving, Kelmscott borders without text
 Art nouveau stained glass, whiplash curves
@@ -1483,9 +1462,9 @@ Marimekko style pattern, big bold flowers
 tessellation, Escher-like interlocking animals
 # light and atmosphere as style
 chiaroscuro painting, single candle, deep darkness
-Caravaggio style painting, harsh spotlight, black background
-Georges de La Tour style painting, candlelight glow
-Joseph Wright of Derby style painting, lamplight in darkness
+in the style of Caravaggio
+in the style of Georges de La Tour
+in the style of Joseph Wright of Derby
 nocturne painting, deep blue and gold lamplight
 tenebrism, figures emerging from darkness
 luminism, glowing still air
@@ -1507,3 +1486,799 @@ cyanotype on fabric, deep blue
 lumen print, ghostly purple and orange
 photogram, white shapes on black
 light painting photograph, glowing scribbles
+
+# ---- artists SD 1.5 knows by name (added 2026-11-10), as "in the style of NAME" ----
+## styles
+in the style of Aaron Horkey
+in the style of Aaron Jasinski
+in the style of Abbott Handerson Thayer
+in the style of Abdul Mati Klarwein
+in the style of Abigail Larson
+in the style of Abram Arkhipov
+in the style of Adam Elsheimer
+in the style of Adam Hughes
+in the style of Adolph von Menzel
+in the style of Adrian Ghenie
+in the style of Adrian Tomine
+in the style of Adrianus Eversen
+in the style of Agnes Cecile
+in the style of Agostino Arrivabene
+in the style of Akihiko Yoshida
+in the style of Akira Kurosawa
+in the style of Akira Toriyama
+in the style of Al Williamson
+in the style of Alan Lee
+in the style of Albert Goodwin
+in the style of Albert Pinkham Ryder
+in the style of Albert Robida
+in the style of Alberto Morrocco
+in the style of Alberto Seveso
+in the style of Alberto Vargas
+in the style of Albrecht Altdorfer
+in the style of Alena Aenami
+in the style of Alessandro Allori
+in the style of Alessio Albi
+in the style of Alex Andreev
+in the style of Alex Grey
+in the style of Alex Gross
+in the style of Alex Horley
+in the style of Alex Maleew
+in the style of Alex Ross
+in the style of Alex Russell Flint
+in the style of Alex Schomburg
+in the style of Alex Timmermans
+in the style of Alex Toth
+in the style of Alexander Archipenko
+in the style of Alexander Jansson
+in the style of Alexander Nasmyth
+in the style of Alexandre Benois
+in the style of Alexandre Calame
+in the style of Alexei Savrasov
+in the style of Alfons Walde
+in the style of Alfred Joseph Casson
+in the style of Alfred Kubin
+in the style of Alfred Stieglitz
+in the style of Alfred Wallis
+in the style of Alice Bailly
+in the style of Alice Neel
+in the style of Alice Provensen
+in the style of Alois Arnegger
+in the style of Alvin Langdon Coburn
+in the style of Amanda Sage
+in the style of Ambrosius Bosschaert
+in the style of Ambrosius Holbein
+in the style of Amy Earles
+in the style of Anato Finnstark
+in the style of Ando Fuchs
+in the style of Andre Derain
+in the style of André Lhote
+in the style of André Masson
+in the style of Andrea del Sarto
+in the style of Andrea del Verrocchio
+in the style of Andrea Mantegna
+in the style of Andreas Achenbach
+in the style of Andreas Rocha
+in the style of Andreas Vesalius
+in the style of Andrew Ferez
+in the style of Andrew Loomis
+in the style of Andrew Macara
+in the style of Andrey Remnev
+in the style of Android Jones
+in the style of Andy Fairhurst
+in the style of Andy Kehoe
+in the style of Angela Barrett
+in the style of Angus McKie
+in the style of Anna Ancher
+in the style of Anna Dittmann
+in the style of Anne Bachelier
+in the style of Anne Redpath
+in the style of Ansel Adams
+in the style of Anselm Kiefer
+in the style of Antoine Blanchard
+in the style of Anton Fadeev
+in the style of Anton Franciscus Pieck
+in the style of Anton Semenov
+in the style of Antonello da Messina
+in the style of Apollonia Saintclair
+in the style of Apterus
+in the style of Aristarkh Lentulov
+in the style of Armand Guillaumin
+in the style of Arnold Böcklin
+in the style of Artemisia Gentileschi
+in the style of Artgerm
+in the style of Arthur Adams
+in the style of Arthur Ernest Streeton
+in the style of Arthur Hacker
+in the style of Arthur Lismer
+in the style of Arthur Sarnoff
+in the style of Arthur Suydam
+in the style of Asher Brown Durand
+in the style of Ashley Wood
+in the style of Atelier Olschinsky
+in the style of Atey Ghailan
+in the style of Audrey Kawasaki
+in the style of Austin Briggs
+in the style of Austin Osman Spare
+in the style of Ayami Kojima
+in the style of Balthasar van der Ast
+in the style of Barclay Shaw
+in the style of Barry McGee
+in the style of Barry Windsor-Smith
+in the style of Basil Gogos
+in the style of Bastien Lecouffe-Deharme
+in the style of Becky Cloonan
+in the style of Beeple
+in the style of Bella Kotak
+in the style of Ben Templesmith
+in the style of Benedick Bana
+in the style of Bernie Wrightson
+in the style of Berthe Morisot
+in the style of Bessie MacNicol
+in the style of Bill Jacklin
+in the style of Bill Sienkiewicz
+in the style of Bo Bartlett
+in the style of Bob Eggleton
+in the style of Bob Peak
+in the style of Boris Vallejo
+in the style of Botero
+in the style of Brandon Woelfel
+in the style of Brent Heighton
+in the style of Brian Bolland
+in the style of Brian Froud
+in the style of Brian K. Vaughan
+in the style of Brian Kesinger
+in the style of Brian Mashburn
+in the style of Brian Stelfreeze
+in the style of Brooke Shaden
+in the style of Bruce Pennington
+in the style of Bruno Munari
+in the style of Bryan Hitch
+in the style of Butcher Billy
+in the style of Camille Walala
+in the style of Candido Portinari
+in the style of Carel Willink
+in the style of Carlos Schwabe
+in the style of Carmine Infantino
+in the style of Carne Griffiths
+in the style of Casey Baugh
+in the style of Casey Weldon
+in the style of Catherine Hyde
+in the style of Catherine Nolin
+in the style of Cathleen McAllister
+in the style of Catrin Welz-Stein
+in the style of Chaim Soutine
+in the style of Charles Camoin
+in the style of Charles Dana Gibson
+in the style of Charles Edward Conder
+in the style of Charles Maurice Detmold
+in the style of Charles Vess
+in the style of Charlie Bowater
+in the style of Chesley Bonestell
+in the style of Chiho Aoshima
+in the style of Chris Bachalo
+in the style of Chris Cold
+in the style of Chris Dyer
+in the style of Chris Foss
+in the style of Chris Friel
+in the style of Chris Mars
+in the style of Chris Moore
+in the style of Chris Ofili
+in the style of Chris Turnham
+in the style of Christopher Balaskas
+in the style of Chuck Sperry
+in the style of Cimabue
+in the style of Clara Peeters
+in the style of Cleon Peterson
+in the style of Clint Cearley
+in the style of Clive Barker
+in the style of Clyde Caldwell
+in the style of Coby Whitmore
+in the style of Coles Phillips
+in the style of Colin Campbell Cooper
+in the style of Conor Harrington
+in the style of Conrad Roset
+in the style of Cornelis de Heem
+in the style of Cornelis Saftleven
+in the style of Cory Loftis
+in the style of Craig Davison
+in the style of Craig Mullins
+in the style of Craig Thompson
+in the style of Cuno Amiet
+in the style of Cynthia Sheppard
+in the style of Cyril Rolando
+in the style of Dale Chihuly
+in the style of Dan DeCarlo
+in the style of Dan Flavin
+in the style of Dan Matutina
+in the style of Dan McPharlin
+in the style of Dan Mora
+in the style of Dan Mumford
+in the style of Daniel F. Gerhartz
+in the style of Daniel Merriam
+in the style of Daniela Uhlig
+in the style of Darek Zabrocki
+in the style of Dave Gibbons
+in the style of Dave McKean
+in the style of David A. Hardy
+in the style of David Aja
+in the style of David Alfaro Siqueiros
+in the style of David C. Driskell
+in the style of David Downton
+in the style of David LaChapelle
+in the style of David Mattingly
+in the style of David Michael Bowers
+in the style of David Tutwiler
+in the style of Dean Ellis
+in the style of Death Burger
+in the style of Debbie Criswell
+in the style of Delphin Enjolras
+in the style of Derek Gores
+in the style of Diane Dillon
+in the style of Didier Cassegrain
+in the style of Didier Lourenço
+in the style of Diego Velázquez
+in the style of Dod Procter
+in the style of Domenico Ghirlandaio
+in the style of Don Lawrence
+in the style of Donato Giancola
+in the style of Dorothy Johnstone
+in the style of Drew Struzan
+in the style of Duncan Fegredo
+in the style of Duncan Grant
+in the style of Dustin Nguyen
+in the style of Duy Huynh
+in the style of Earl Norem
+in the style of Earle K. Bergey
+in the style of Ed Binkley
+in the style of Ed Emshwiller
+in the style of Ed Mell
+in the style of Eddie Mendoza
+in the style of Eduardo Paolozzi
+in the style of Edward Atkinson Hornel
+in the style of Edward Blair Wilkins
+in the style of Edward Burne-Jones
+in the style of Edward Francis Paschke
+in the style of Edward Robert Hughes
+in the style of Edwin Austin Abbey
+in the style of Edwin Deakin
+in the style of Edwin Georgi
+in the style of Edwin Landseer
+in the style of Edwin Lord Weeks
+in the style of Eiko Ojala
+in the style of Eileen Agar
+in the style of El Greco
+in the style of El Huervo
+in the style of Eleanor Fortescue-Brickdale
+in the style of Élisabeth Vigée-Lebrun
+in the style of Ellen Gallagher
+in the style of Ellen Jewett
+in the style of Elmer Bischoff
+in the style of Elsa Beskow
+in the style of Emily Balivet
+in the style of Emmanuel Shiu
+in the style of Emory Douglas
+in the style of Enki Bilal
+in the style of Eric Zener
+in the style of Erin Hanson
+in the style of Ernest Procter
+in the style of Ernie Barnes
+in the style of Ernst Fuchs
+in the style of Ernst Haeckel
+in the style of Erté
+in the style of Esao Andrews
+in the style of Esteban Maroto
+in the style of Etel Adnan
+in the style of Euan Uglow
+in the style of Eugène Atget
+in the style of Eugène Grasset
+in the style of Evelyn De Morgan
+in the style of Everett Shinn
+in the style of Eytan Zana
+in the style of F. Scott Hess
+in the style of Fairfield Porter
+in the style of Faith Ringgold
+in the style of Farel Dalrymple
+in the style of Fenghua Zhong
+in the style of Ferdinand Hodler
+in the style of Ferdinand Knab
+in the style of Fernando Amorsolo
+in the style of Filip Hodas
+in the style of Filippino Lippi
+in the style of Fitz Henry Lane
+in the style of Floris Arntzenius
+in the style of Ford Madox Brown
+in the style of Fra Angelico
+in the style of Frances MacDonald McNair
+in the style of Francesco del Cossa
+in the style of Francesco Francavilla
+in the style of Francis Cadell
+in the style of Francis-Marie Martinez Picabia
+in the style of François Boucher
+in the style of Frank Auerbach
+in the style of Frank Bowling
+in the style of Frank Bramley
+in the style of Frank Cho
+in the style of Frank Frazetta
+in the style of Frank Hong
+in the style of Frank Kelly-Freas
+in the style of Frank McCarthy
+in the style of Frank Quitely
+in the style of Franklin Booth
+in the style of Franz Xaver Winterhalter
+in the style of Fred Calleri
+in the style of Frederic Edwin Church
+in the style of Frederick McCubbin
+in the style of Gabriel Picolo
+in the style of Gary Larson
+in the style of Gary Panter
+in the style of Gaston Bussière
+in the style of Gediminas Pranckevicius
+in the style of Genndy Tartakovsky
+in the style of Geof Darrow
+in the style of George Ault
+in the style of George B. Bridgman
+in the style of George Barbier
+in the style of George Condo
+in the style of George Frederic Watts
+in the style of George Hurrell
+in the style of George Wesley Bellows
+in the style of Georges Seurat
+in the style of Gerald Brom
+in the style of Gerald Parel
+in the style of Gerd Arntz
+in the style of Germaine Krull
+in the style of Gian Lorenzo Bernini
+in the style of Gifford Beal
+in the style of Gil Elvgren
+in the style of Giovanni Tiepolo
+in the style of Giuseppe Arcimboldo
+in the style of Gjon Mili
+in the style of Glen Brogan
+in the style of Glen Keane
+in the style of Glenn Fabry
+in the style of Godfried Schalcken
+in the style of Goro Fujita
+in the style of Govert Flinck
+in the style of Grace Cossington Smith
+in the style of Graham Sutherland
+in the style of Greg Simkins
+in the style of Grégoire Guillemin
+in the style of Gregory Crewdson
+in the style of Gregory Manchess
+in the style of Gris Grimly
+in the style of Guido Crepax
+in the style of Guillaume Seignac
+in the style of Guo Pei
+in the style of Gustaf Tenggren
+in the style of Gustave Moreau
+in the style of Guweiz
+in the style of Guy Denning
+in the style of H.P. Lovecraft
+in the style of Hal Foster
+in the style of Halil Ural
+in the style of Hannah Höch
+in the style of Hannah Yata
+in the style of Hans Erni
+in the style of Hans Hartung
+in the style of Hans Makart
+in the style of Hans Rudolf Giger
+in the style of Harvey Kurtzman
+in the style of Hayv Kahraman
+in the style of Helen Allingham
+in the style of Helene Schjerfbeck
+in the style of Henri Edmond Cross
+in the style of Henri Fantin-Latour
+in the style of Henry Asencio
+in the style of Henry Clive
+in the style of Henry Darger
+in the style of Henry Moret
+in the style of Henry Ossawa Tanner
+in the style of Henry Patrick Raleigh
+in the style of Henryk Siemiradzki
+in the style of Hiroshi Nagai
+in the style of Hiroyuki-Mitsume Takahashi
+in the style of Hishikawa Moronobu
+in the style of Honoré Daumier
+in the style of Hope Gangloff
+in the style of Howard Terpning
+in the style of Hsiao-Ron Cheng
+in the style of Huang Guangjian
+in the style of Hugh Ferriss
+in the style of Hugo Pratt
+in the style of Humberto Ramos
+in the style of Hyacinthe Rigaud
+in the style of Ian McQue
+in the style of Ian Miller
+in the style of Ignacio Zuloaga
+in the style of Igor Morski
+in the style of Ilya Kuvshinov
+in the style of Ismail Inceoglu
+in the style of Ivan Albright
+in the style of Ivan Chermayeff
+in the style of Ivan Kramskoi
+in the style of Iwona Lifsches
+in the style of J.J. Grandville
+in the style of Jacek Yerka
+in the style of Jack Davis
+in the style of Jackson Pollock
+in the style of Jacopo da Pontormo
+in the style of Jacques-Louis David
+in the style of Jae Lee
+in the style of Jakub Rebelka
+in the style of James Bidgood
+in the style of James C. Christensen
+in the style of James Gilleard
+in the style of James Jean
+in the style of James Stokoe
+in the style of Jan Urschel
+in the style of Jane Newland
+in the style of Jason Edmiston
+in the style of Jay Anacleto
+in the style of Jean Arp
+in the style of Jean Delville
+in the style of Jean Dubuffet
+in the style of Jean Jullien
+in the style of Jean Metzinger
+in the style of Jean Siméon Chardin
+in the style of Jean-Antoine Watteau
+in the style of Jean-Auguste-Dominique Ingres
+in the style of Jean-Baptiste Camille Corot
+in the style of Jean-Baptiste Monge
+in the style of Jean-Honoré Fragonard
+in the style of Jean-Paul Riopelle
+in the style of Jeff Easley
+in the style of Jeff Koons
+in the style of Jeff Lemire
+in the style of Jeffrey Catherine Jones
+in the style of Jeremiah Ketner
+in the style of Jeremy Geddes
+in the style of Jeremy Mann
+in the style of Jerry Pinkney
+in the style of Jesper Ejsing
+in the style of Jessica Rossier
+in the style of Jim Mahfood
+in the style of Jim Burns
+in the style of Jim Lee
+in the style of João Ruas
+in the style of Joe Jusko
+in the style of Joe Webb
+in the style of Johan Hendrik Weissenbruch
+in the style of Johannes Itten
+in the style of Johfra Bosschart
+in the style of John Berkey
+in the style of John Blanche
+in the style of John Carl Schoenherr
+in the style of John Chamberlain
+in the style of John Currin
+in the style of John Harris
+in the style of John Howe
+in the style of John Hoyland
+in the style of John James Audubon
+in the style of John Kenn Mortensen
+in the style of John Martin
+in the style of John Perceval
+in the style of John Philip Falter
+in the style of John Salminen
+in the style of John Thomas Biggers
+in the style of John William Waterhouse
+in the style of Jon Foster
+in the style of Jon Whitcomb
+in the style of Jonas De Ro
+in the style of Jonny Duddle
+in the style of Jordan Grimmer
+in the style of Jorge Jacinto
+in the style of Joseph Christian Leyendecker
+in the style of Josh Adamski
+in the style of Joshua Middleton
+in the style of Jovana Rikalo
+in the style of Jung-Gi Kim
+in the style of Junji Itō
+in the style of Junko Mizuno
+in the style of Justin Gerard
+in the style of Justin Maller
+in the style of Kadir Nelson
+in the style of Karel Appel
+in the style of Karel Thole
+in the style of Karl Wilhelm Diefenbach
+in the style of Karol Bak
+in the style of Kate Greenaway
+in the style of Katsuhiro Otomo
+in the style of Katsuya Terada
+in the style of Kazumasa Nagai
+in the style of Kazuya Takahashi
+in the style of Kehinde Wiley
+in the style of Keith Negley
+in the style of Kelly Sue DeConnick
+in the style of Ken Kelly
+in the style of Ken Sugimori
+in the style of Kentarō Miura
+in the style of Kevin Sloan
+in the style of Kilian Eng
+in the style of Kim Keever
+in the style of Kurt Schwitters
+in the style of Laurie Greasley
+in the style of Laurie Lipton
+in the style of Lawren Harris
+in the style of Leo Putz
+in the style of Leonardo Da Vinci
+in the style of Leonid Afremov
+in the style of Liam Wong
+in the style of Lijun Fang
+in the style of Liniers
+in the style of Lisa Frank
+in the style of Liu Ye
+in the style of Loish
+in the style of Loui Jover
+in the style of Louis Icart
+in the style of Louis Rhead
+in the style of Louis Wain
+in the style of Louise Dahl-Wolfe
+in the style of Lovis Corinth
+in the style of Lowell Herrero
+in the style of Lucian Freud
+in the style of Ludwig Bemelmans
+in the style of Lynd Ward
+in the style of Maciej Kuciara
+in the style of Mandy Jurgens
+in the style of Marc Davis
+in the style of Marc Silvestri
+in the style of Marc Simonetti
+in the style of Marcin Jakubowski
+in the style of Margaret MacDonald Mackintosh
+in the style of Margaret Olley
+in the style of Maria Lassnig
+in the style of Maria Sibylla Merian
+in the style of Marianne North
+in the style of Marie Severin
+in the style of Marius Borgeaud
+in the style of Mark Arian
+in the style of Mark Rothko
+in the style of Mark Ryden
+in the style of Marsden Hartley
+in the style of Martin Ansin
+in the style of Martin Grelle
+in the style of Martin Schoeller
+in the style of Martin Schongauer
+in the style of Martiros Saryan
+in the style of Masamune Shirow
+in the style of Matt Bors
+in the style of Matt Fraction
+in the style of Matt Rhodes
+in the style of Mattias Adolfsson
+in the style of Maurice Denis
+in the style of Maxfield Parrish
+in the style of Maximilian Maria Ernst
+in the style of Maximilian Pirner
+in the style of Maximilien Luce
+in the style of Michael Carson
+in the style of Michael Cheval
+in the style of Michael DeForge
+in the style of Michael Hutter
+in the style of Michael Kutsche
+in the style of Michael Whelan
+in the style of Michael William Kaluta
+in the style of Michal Lisowski
+in the style of Mickalene Thomas
+in the style of Mikalojus Ciurlionis
+in the style of Mike Allred
+in the style of Mike Deodato
+in the style of Mike Mayhew
+in the style of Mikko Lagerstedt
+in the style of Miles Aldridge
+in the style of Milton Avery
+in the style of Milton Caniff
+in the style of Milton Glaser
+in the style of Misha Gordin
+in the style of Mordecai Ardon
+in the style of Nan Goldin
+in the style of Naoto Hattori
+in the style of Nathan Wirth
+in the style of Neal Adams
+in the style of Neil Blevins
+in the style of Nicholas Roerich
+in the style of Nick Knight
+in the style of Nicola Samorì
+in the style of Nicolas de Crécy
+in the style of Nicolas Delort
+in the style of Nikolai Astrup
+in the style of Nikolina Petolas
+in the style of Njideka Akunyili Crosby
+in the style of Noah Bradley
+in the style of Norman Ackroyd
+in the style of Odd Nerdrum
+in the style of Odilon Redon
+in the style of Oleg Oprisco
+in the style of Olivier Bonhomme
+in the style of Olly Moss
+in the style of Ori Toor
+in the style of Osamu Tezuka
+in the style of Oskar Fischinger
+in the style of Oskar Kokoschka
+in the style of Ossip Zadkine
+in the style of Otto Marseus van Schrieck
+in the style of Pablo Carpio
+in the style of Paolo Roversi
+in the style of Parmigianino
+in the style of Pascal Campion
+in the style of Patrick Nagel
+in the style of Paul Barson
+in the style of Paul Cadmus
+in the style of Paul Catherall
+in the style of Paul Corfield
+in the style of Paul Gustav Fischer
+in the style of Paul Lehr
+in the style of Paul Pope
+in the style of Paul Signac
+in the style of Peder Balke
+in the style of Peter de Sève
+in the style of Peter Elson
+in the style of Peter Gric
+in the style of Peter Mohrbacher
+in the style of Peter Wileman
+in the style of Petros Afshar
+in the style of Phil Jimenez
+in the style of Philippe Druillet
+in the style of Piero della Francesca
+in the style of Pierre Puvis de Chavannes
+in the style of Pieter Aertsen
+in the style of Pietro Annigoni
+in the style of Pino Daeni
+in the style of Piotr Foksowicz
+in the style of Q Hayashida
+in the style of R. Kenton Nelson
+in the style of Rachel Ruysch
+in the style of Rafael Albuquerque
+in the style of Ralph Angus McQuarrie
+in the style of Ralph Bakshi
+in the style of Ralph Gibson
+in the style of Ralph Steadman
+in the style of Ranganath Krishnamani
+in the style of Raphael
+in the style of Raphael Kirchner
+in the style of Raphael Lacoste
+in the style of Ravi Zupa
+in the style of Raymond Duchamp-Villon
+in the style of Raymond Swanland
+in the style of Rebecca Guay
+in the style of Rhads
+in the style of Richard Anderson
+in the style of Richard Avedon
+in the style of Richard Corben
+in the style of Richard Hamilton
+in the style of Richard Lindner
+in the style of Rob Gonsalves
+in the style of Rob Liefeld
+in the style of Robert Bissell
+in the style of Robert Ingpen
+in the style of Robert T. McCall
+in the style of Robert Victor Félix Delaunay
+in the style of Roberto Ferri
+in the style of Rodney Matthews
+in the style of Rolf Armstrong
+in the style of Romero Britto
+in the style of Ron Cobb
+in the style of Ross Tran
+in the style of Ruan Jia
+in the style of Rufino Tamayo
+in the style of Rumiko Takahashi
+in the style of Russ Mills
+in the style of Ryohei Hase
+in the style of Sachin Teng
+in the style of Sam Bosma
+in the style of Sam Gilliam
+in the style of Sam Guay
+in the style of Sam Kieth
+in the style of Sam Spratt
+in the style of Sandra Chevrier
+in the style of Sandro Botticelli
+in the style of Santiago Caruso
+in the style of Saskia Gutekunst
+in the style of Saul Tepper
+in the style of Scott Listfield
+in the style of Scott Naismith
+in the style of Sean Phillips
+in the style of Sean Yoro
+in the style of Seb McKinnon
+in the style of Sebastien Hue
+in the style of Shahab Alizadeh
+in the style of Shawn Coss
+in the style of Shepard Fairey
+in the style of Sherry Akrami
+in the style of Shinji Aramaki
+in the style of Shintarō Kago
+in the style of Shohei Otomo
+in the style of Shout
+in the style of Simon Bisley
+in the style of Simón Prades
+in the style of Siya Oum
+in the style of Skottie Young
+in the style of Slawomir Maniak
+in the style of Slim Aarons
+in the style of Sparth
+in the style of Stan Manoukian
+in the style of Stanhope Forbes
+in the style of Stefan Morrell
+in the style of Stephan Martinière
+in the style of Stephen Gammell
+in the style of Stephen Hickman
+in the style of Steve Ditko
+in the style of Steve Purcell
+in the style of Steven DaLuz
+in the style of Stuart Immonen
+in the style of Sui Ishida
+in the style of Susan Seddon-Boulet
+in the style of Sylvain Sarrailh
+in the style of Szymon Biernacki
+in the style of Tadahiro Uesugi
+in the style of Tadanori Yokoo
+in the style of Takashi Murakami
+in the style of Takehiko Inoue
+in the style of Tara McPherson
+in the style of Tatsuro Kiuchi
+in the style of Ted Nasmith
+in the style of Theo Prins
+in the style of Thomas Eakins
+in the style of Thomas Moran
+in the style of Thomas Shotter Boys
+in the style of Thomas W. Schaller
+in the style of Thornton Oakley
+in the style of Tim Blandin
+in the style of Tim Doyle
+in the style of Titian
+in the style of Todd McFarlane
+in the style of Tom Bagshaw
+in the style of Tom Lovell
+in the style of Tom Thomson
+in the style of Tom Whalen
+in the style of Tomasz Strzalkowski
+in the style of Tomer Hanuka
+in the style of Tomma Abts
+in the style of Tony Sandoval
+in the style of Travis Charest
+in the style of Trina Robbins
+in the style of Tristan Eaton
+in the style of Tsutomu Nihei
+in the style of Tyler Edlin
+in the style of Tyler Shields
+in the style of Umberto Boccioni
+in the style of Utagawa Kunisada
+in the style of Utamaro Kitagawa
+in the style of Vasily Vereshchagin
+in the style of Victo Ngai
+in the style of Victor Brauner
+in the style of Victor Moscoso
+in the style of Victor Nizovtsev
+in the style of Vincent Di Fate
+in the style of Virgil Finlay
+in the style of Wadim Kashin
+in the style of Walter Crane
+in the style of Warwick Goble
+in the style of Wayne Barlowe
+in the style of Will Barnet
+in the style of Will Eisner
+in the style of Will Murai
+in the style of Willem de Kooning
+in the style of William Blake
+in the style of William Eggleston
+in the style of William Heath Robinson
+in the style of William James Glackens
+in the style of William Kentridge
+in the style of William Morris
+in the style of William Mortensen
+in the style of William Zorach
+in the style of Wim Delvoye
+in the style of Winifred Margaret Knights
+in the style of Winslow Homer
+in the style of Winsor McCay
+in the style of Wlop
+in the style of Yaacov Agam
+in the style of Yanjun Cheng
+in the style of Yasushi Nirasawa
+in the style of Yōji Shinkawa
+in the style of Yoshitaka Amano
+in the style of Yuko Shimizu
+in the style of Yusuke Murata
+in the style of Yvonne Coomber
+in the style of Zac Retz
+in the style of Zao Wou-Ki
+in the style of Zhelong Xu

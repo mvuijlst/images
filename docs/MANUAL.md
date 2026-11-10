@@ -47,7 +47,7 @@ slow slideshow of new images based on real things, each one made on the spot:
   the words as its main subjects. The program then adds the time of day and a style (first), the weather
   (as a full phrase: "in light rain, wet reflections", "starry sky, moonlight", frost below 2 °C), a
   viewpoint and sometimes a colour palette, all from `scene_parts.txt` (about 325 Ghent settings, 235
-  situations, 120 viewpoints, 690 styles, 95 palettes). Every list hands out each item once before any
+  situations, 120 viewpoints, 1,460 styles, 95 palettes). Every list hands out each item once before any
   comes back, and remembers where it was across restarts (`screensaver_bags.json`), so combinations
   practically never repeat. The caption shows the words, and under them the weather: "8 °C · clear sky ·
   night".
@@ -62,12 +62,14 @@ slow slideshow of new images based on real things, each one made on the spot:
     that copy an example are rejected, and a word that is still missing goes in as a plain tag. The
     model's own time of day is removed, the real one goes first in the prompt (or SD 1.5 ignores it), and
     the prompt is trimmed to SD 1.5's 77 tokens, never cutting the style.
-  - **Styles** say what the picture is made of and how it looks ("two-colour linocut print, bold carved
-    lines, flat red and black"), not just a name: SD 1.5 knows few painters by name and turns the rest
-    into the same brown oil painting, and at night a vague style ("pavement chalk art") is lost in the dark
-    redraw while a well-described one (linocut, comic art) survives. The style comes right after the time
-    of day for the same reason. Styles that invite lettering (posters, postcards, covers, maps) are left
-    out. Add your own the same way.
+  - **Styles** are of two kinds. About 975 are artists SD 1.5 knows by name, written as "in the style of
+    Kawase Hasui". The rest say what the picture is made of and how it looks ("two-colour linocut print,
+    bold carved lines, flat red and black"): at night a vague style ("pavement chalk art") is lost in the
+    dark redraw while a well-described one survives. The style comes right after the time of day for the
+    same reason. Film looks stay "… style film still". Left out: styles that invite lettering (posters,
+    postcards, covers, maps; also Aldus Manutius, Paula Scher, Paul Rand) and artists known mostly for
+    nudes, which SD's safety filter would black out (Bob Mizer, Bunny Yeager, Milo Manara, Hans Bellmer,
+    Nobuyoshi Araki).
   - Ollama is started (`ollama serve`) if it isn't running, and a model you name in the settings is
     pulled once. If it fails, the other sources fill in for 5 minutes. Nothing leaves the PC.
   - Try it without the screensaver: `uv run realworld.py Ghent --words`.
