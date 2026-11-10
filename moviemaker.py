@@ -256,10 +256,14 @@ class Frames:
         elif tr == "wipe":
             draw(prev)
             self._wipe(p, cur, e)
-        # overlays: text that stays the same stays put; other text fades out, then the new text fades in (two
-        # texts on top of each other, as a crossfade would show them, are unreadable)
+        # overlays: text that stays the same stays put; a caption that changes fades out, then the new one fades in
+        # (two texts on top of each other, as a crossfade would show them, are unreadable). The clock never fades:
+        # like a real clock it ticks over to the new time halfway through the transition, at full brightness
+        # (fading it dipped the time and date at every image, which flickered).
         for part in ("caption", "clock"):
-            if prev is not None and f < 1.0 and tr != "cut":
+            if part == "clock" and prev is not None and f < 1.0 and tr != "cut":
+                self._overlay(p, (prev if e < 0.5 else cur)["overlay"], part)
+            elif prev is not None and f < 1.0 and tr != "cut":
                 if self.o.hold_caption and self._part(prev["overlay"], part) == self._part(cur["overlay"], part):
                     self._overlay(p, cur["overlay"], part)
                 else:
