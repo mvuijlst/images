@@ -26,8 +26,8 @@ screensaver and the shortcuts use Windows features.
 2. Get the code and install the packages (CUDA PyTorch, min-dalle, diffusers, PySide6 …, about 4 GB):
 
    ```bash
-   git clone https://github.com/<you>/<repo>.git
-   cd <repo>
+   git clone https://github.com/mvuijlst/images.git
+   cd images
    uv sync
    ```
 
