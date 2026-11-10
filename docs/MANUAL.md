@@ -62,14 +62,14 @@ slow slideshow of new images based on real things, each one made on the spot:
     that copy an example are rejected, and a word that is still missing goes in as a plain tag. The
     model's own time of day is removed, the real one goes first in the prompt (or SD 1.5 ignores it), and
     the prompt is trimmed to SD 1.5's 77 tokens, never cutting the style.
-  - **Styles** are of two kinds. About 975 are artists SD 1.5 knows by name, written as "in the style of
+  - **Styles** are of two kinds. About 980 are artists SD 1.5 knows by name, written as "in the style of
     Kawase Hasui". The rest say what the picture is made of and how it looks ("two-colour linocut print,
     bold carved lines, flat red and black"): at night a vague style ("pavement chalk art") is lost in the
     dark redraw while a well-described one survives. The style comes right after the time of day for the
-    same reason. Film looks stay "… style film still". Left out: styles that invite lettering (posters,
-    postcards, covers, maps; also Aldus Manutius, Paula Scher, Paul Rand) and artists known mostly for
-    nudes, which SD's safety filter would black out (Bob Mizer, Bunny Yeager, Milo Manara, Hans Bellmer,
-    Nobuyoshi Araki).
+    same reason. Film looks stay "… style film still". Every artist name is kept, even type designers and
+    artists known for nudes: in SD 1.5 a name often has a subtler effect than its work suggests (Paul Rand
+    gives clean flat graphic shapes, not lettering), and the text check and safety filter catch the rest.
+    The descriptive styles leave out what invites lettering (posters, postcards, covers, maps).
   - Ollama is started (`ollama serve`) if it isn't running, and a model you name in the settings is
     pulled once. If it fails, the other sources fill in for 5 minutes. Nothing leaves the PC.
   - Try it without the screensaver: `uv run realworld.py Ghent --words`.
