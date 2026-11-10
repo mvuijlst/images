@@ -210,7 +210,8 @@ on the PATH, or choose `ffmpeg.exe`.
   cropped to the shape); 24, 25, 30 or 60 fps.
 - **Show**: weather ("In Ghent · 5 °C · clear sky · night") and time and date (when the image was made),
   both on by default; the screensaver's own caption (the words, the headline…); the prompt. Text that stays
-  the same from one image to the next stays put; other text fades out, then the new text fades in.
+  the same from one image to the next stays put; a caption that changes fades out, then the new one fades in;
+  the clock ticks over to the new time halfway through the transition, without fading.
 - **Save as**: default `<folder>.mp4` next to the folder. The preview shows the middle of the first
   transition with your choices; then *Make movie*, with a progress bar, *Cancel*, *Play* and *Show in
   folder*.
