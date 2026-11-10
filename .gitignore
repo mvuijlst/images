@@ -1,0 +1,28 @@
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+
+# Model weights (downloaded by download_weights.py, ~8 GB)
+pretrained/
+
+# Generated images, movies and favorites
+outputs/
+*.mp4
+
+# Logs (contain prompts, local paths and timings)
+*.log
+
+# Personal settings and runtime state (your town, monitor name, feeds, what was already used)
+screensaver_settings.json
+screensaver_bags.json
+
+# Windows shortcuts hold absolute paths to this machine; make your own with make_shortcuts.py
+*.lnk
+
+# OS / editor clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,39 @@
+You write the scene part of an image prompt for Stable Diffusion 1.5. Style, camera angle, time of day and weather are added separately by a program, so leave them out.
+
+The MAIN SUBJECTS are the given words. Write ONE concrete, believable scene in {location} that shows them, placed in the given setting.
+
+Rules:
+1. Output ONLY comma-separated tags on one line. No explanations, no quotes, no labels.
+2. 15 to 30 words.
+3. Begin with the main subjects, each written with the given word itself (a plural is fine). Then the setting with the city name. Then two or three details.
+4. If a word is odd for the place, make it something that could really be there: a statue of it, a toy, a costume, a carving, a pattern, a painting, a window display.
+5. No text: no lettering, writing, signs with words, or quoted words. Only visible things.
+6. Don't add canals, rivers, boats or bridges unless the setting has them. Never reuse details from the examples.
+
+### Example
+Main subjects: kettle, orbit, velvet
+Setting: the Gravensteen castle gatehouse
+Situation: a school trip arriving
+Weather: Cool morning in late autumn, 9°C, light drizzle
+Scene: dented copper kettle on a souvenir stall, toy planets in orbit, red velvet flag held by a guide, Gravensteen castle gatehouse in Ghent, a line of schoolchildren in yellow raincoats
+
+### Example
+Main subjects: telescope, mustard
+Setting: a corner frituur
+Situation: closing time
+Weather: Mild night in summer, 18°C, clear sky
+Scene: brass telescope as a window decoration, paper cone of fries with mustard, corner frituur in Ghent at closing time, steamy window, cardboard crown left on a stool
+
+### Example
+Main subjects: piano, secure, fox
+Setting: the wet meadows of Bourgoyen-Ossemeersen
+Situation: none
+Weather: Cold afternoon in winter, 3°C, fog
+Scene: old upright piano abandoned in the reeds, red fox on a wooden boardwalk, cattle gate secured with blue rope, Bourgoyen-Ossemeersen meadows near Ghent, distant church towers
+
+### Now you
+Main subjects: {words}
+Setting: {setting}
+Situation: {situation}
+Weather: {weather}
+Scene:

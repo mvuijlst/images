@@ -1,0 +1,1097 @@
+# Parts for the "three random words" scenes. For every image one item is drawn from each list below;
+# each item is used once before any comes back (remembered across restarts in screensaver_bags.json),
+# so with lists this long the same combination practically never repeats.
+# One item per line; "## name" starts a list; lines starting with # are ignored. Add, remove, reword
+# freely: changes apply from the next start. The settings are written for Ghent.
+
+## settings
+the Gravensteen castle gatehouse
+the battlements of the Gravensteen castle
+the Belfry tower with its gilded dragon on top
+the Cloth Hall at the foot of the Belfry
+the Mammelokker gatehouse beside the Belfry
+the nave of Saint Bavo's Cathedral
+the crypt of Saint Bavo's Cathedral
+Saint Bavo's square with the theatre facade
+Saint Nicholas' Church seen from the Korenmarkt
+the Korenmarkt square
+the Vrijdagmarkt square with its tall bronze statue
+the Groentenmarkt with the old meat hall
+the giant red medieval cannon Dulle Griet
+the narrow lanes of the Patershol quarter
+the Werregarenstraat graffiti alley
+the Sunday flower market on the Kouter
+the bandstand on the Kouter square
+the Sint-Pietersplein square
+the cloister of Saint Peter's Abbey
+the small vineyard of Saint Peter's Abbey
+the ruins of Saint Bavo's Abbey
+the Citadelpark with its rock garden and grotto
+the museum steps in the Citadelpark
+the greenhouses of the university botanical garden
+the clock tower of Gent-Sint-Pieters railway station
+the platforms of Gent-Sint-Pieters station
+the underground bicycle parking at the station
+the Dampoort railway station
+the Groot Begijnhof with its little houses and church
+the Klein Begijnhof courtyard garden
+the Oud Begijnhof lanes
+the Prinsenhof quarter
+the twin towers of the Rabot
+the Stadshal pavilion with its wooden roof
+the Book Tower of the university library
+the courtyard of Het Pand
+the converted warehouses of Dok Noord
+the Saint James' flea market
+the Overpoort student street at night
+the Blaarmeersen park and its lake
+the Gentbrugse Meersen meadows
+the wet meadows of Bourgoyen-Ossemeersen
+the opera house foyer
+the festival hall of Vooruit
+the De Krook library
+the folk museum courtyard with its puppet theatre
+the Design Museum's period rooms
+the old Bijloke abbey and its gardens
+the Carmelite monastery halls
+the old cotton mill of the Industry Museum
+the Geeraard de Duivelsteen medieval fortress
+the Achtersikkel courtyard with its round tower
+the Sint-Veerleplein beside the castle
+the old fish market gate with Neptune on top
+the Hoogpoort with its medieval houses
+the Onderstraat
+the Veldstraat shopping street
+an 18th-century mansion on the Veldstraat
+the round courtyard of the Zebrastraat
+the Gentse Feesten street festival
+the Light Festival with installations on old facades
+the Floraliën flower show
+the cuberdon candy carts on the Groentenmarkt
+the rowing course in the Watersportbaan
+the port of Ghent with cranes and ships
+the steelworks on the edge of the port
+the Muinkpark
+the Zuidpark promenade
+the Christmas market on Saint Bavo's square
+the funfair on the Sint-Pietersplein
+the Graslei guild houses
+the Korenlei
+Saint Michael's bridge
+a quiet stretch of the Coupure
+a narrow medieval street with stepped gables
+an art nouveau townhouse facade
+a 1930s modernist villa
+a row of 19th-century workers' houses around a courtyard
+a street of narrow brick terraced houses in Brugse Poort
+the main street of Ledeberg
+a student street with bicycles chained everywhere
+a tram stop on a busy avenue
+a tram depot
+a bus station
+a taxi rank by the station
+a bike lane along the ring road
+a cycle tunnel under a roundabout
+a parking garage rooftop
+a pedestrian crossing in the old centre
+a side street
+a brick alleyway
+a hidden courtyard garden
+a back alley with bins and bicycles
+a cobblestone square with a fountain
+a car-free street with planters and benches
+a brown café with wood panelling
+a jenever bar with hundreds of bottles
+a corner frituur
+a waffle stand
+a chocolate shop window
+a comic book shop
+a vintage record shop
+an antique shop full of clutter
+a florist's shop
+a butcher's shop with tiled walls
+a cheese shop
+a bakery counter
+a barbershop
+a tailor's workshop
+a bicycle repair shop
+a laundrette
+a night shop under fluorescent light
+a late-night food street
+a fishmonger's market stall
+a covered market hall
+a street market
+a student room in an old house
+an attic window over the rooftops
+a rooftop terrace with plants
+a balcony with washing on the line
+a staircase in an old mansion
+a cloister garden
+a church interior with candles
+a university lecture hall
+a library reading room
+a school playground
+a skate park
+an allotment garden
+a community garden in a former factory yard
+a warehouse turned into lofts
+a theatre backstage
+a circus tent on a square
+a petting farm in a city park
+a park with a pond and ducks
+a dog park
+a playground in a small park
+a petrol station on the edge of town
+a greenhouse nursery on the city edge
+flat polder fields at the city edge
+a street being dug up for roadworks
+a building site with cranes
+a churchyard with old trees
+a square with plane trees
+a city bench under a lamp post
+
+## situations
+deliveries arriving at dawn
+a street being repaved
+moving day, furniture on the pavement
+a wedding party posing for photos
+a brass band rehearsing
+a flea market setting up
+the market packing up
+a busker drawing a small crowd
+a children's birthday party
+students cycling home
+a power cut, candles in the windows
+a dog walker with six dogs
+festival bunting strung between houses
+a film crew shooting a scene
+a lost red balloon drifting
+a cat watching pigeons
+a window cleaner on a ladder
+a painter at an easel
+a chess game on a bench
+a queue outside a bakery
+a tram stuck behind a delivery van
+a florist arranging buckets of flowers
+an open-air cinema
+a cyclist fixing a flat tyre
+a procession of giant festival figures
+a carnival parade
+a book swap on a folding table
+tourists studying a paper map
+a horse-drawn carriage passing
+an old couple dancing
+a kite stuck in a tree
+laundry drying in the wind
+a stage being built for a concert
+a puppet show for children
+chalk drawings on the pavement
+a vintage car meeting
+a choir singing outside
+church bells ringing
+racing pigeons being released
+a fishmonger hosing down the floor
+school letting out
+a costume party spilling outside
+a shop's grand opening with balloons
+closing time
+a street sweeper at work
+a craftsman restoring a facade
+scaffolding on an old gable
+a crane lifting a piano through a window
+a marching band
+a pop-up library
+a picnic
+a street dinner at one long table
+a fortune teller's tent
+a magician performing
+a cat asleep on a car roof
+someone reading at an open window
+a first date
+a sleepy Sunday morning, shutters closed
+the moment just after a heavy shower
+an ordinary quiet moment
+a lone jogger
+twins on matching tricycles
+a delivery cyclist with a huge parcel
+a lost dog looking for its owner
+an artist sketching tourists
+an ice cream van arriving
+a yoga class in the open air
+a street photographer at work
+a group of nuns on bicycles
+a scout troop on an outing
+a small protest with homemade signs
+roadworkers taking a coffee break
+a boy chasing pigeons
+a game of street football
+an accordion player
+a jazz trio on a corner
+a sudden gust of wind scattering papers
+a Christmas tree being carried home
+a pumpkin display on doorsteps
+spring cleaning, rugs over balconies
+a flood of autumn leaves
+a garden party
+a tea party for dolls
+a rescue of a cat from a tree
+a flower delivery
+a mail carrier on her round
+a baker carrying trays of bread
+a newspaper seller
+a balloon seller
+a lantern walk with children
+
+## viewpoints
+aerial view
+bird's-eye view
+seen from high above
+high angle from an upstairs window
+low angle from the cobblestones
+worm's-eye view
+eye level from across the street
+wide-angle establishing shot
+telephoto compressed perspective
+extreme close-up
+macro detail shot
+fisheye lens
+tilt-shift miniature effect
+symmetrical one-point perspective
+dutch angle
+seen through a window
+reflected in a puddle
+reflected in a shop window
+framed by a stone archway
+framed by a doorway
+seen through a gap in a hedge
+seen through a keyhole
+peeking around a corner
+over the shoulder of a passer-by
+seen from a moving tram
+from a bicycle seat
+from a café table
+from a balcony
+from a rooftop
+panoramic view
+vertical panorama
+silhouettes against the sky
+backlit
+deep focus, everything sharp
+shallow depth of field
+blurred foreground, sharp background
+long exposure with light trails
+motion blur
+centred composition
+small subject in a vast space
+rule of thirds composition
+tight crop
+wide empty foreground
+cinematic widescreen framing
+isometric view
+cutaway view
+straight top-down view
+seen through binoculars
+in a car's side mirror
+through a rain-dotted lens
+in a convex street mirror
+seen from inside a shop
+from the top of a staircase
+from the bottom of a staircase
+through a lace curtain
+between two buildings
+from behind a market stall
+
+## styles
+35mm film photograph
+medium format film photograph
+Kodachrome slide photograph
+Polaroid photograph
+disposable camera flash photograph
+expired film photograph with light leaks
+black and white street photograph
+1950s black and white photograph
+1970s colour snapshot
+1890s photochrom print
+hand-coloured vintage photograph
+cyanotype print
+daguerreotype
+infrared photograph
+long exposure night photograph
+cinematic film still
+Flemish primitive oil painting
+Pieter Bruegel the Elder style painting
+Rubens style baroque painting
+Dutch golden age painting
+Vermeer style painting
+James Ensor style painting
+René Magritte style surrealist painting
+Paul Delvaux style dreamlike painting
+Léon Spilliaert style ink wash
+Emile Claus style luminist painting
+Théo van Rysselberghe style pointillist painting
+Flemish expressionist painting
+Rik Wouters style fauvist painting
+impressionist oil painting
+post-impressionist painting
+pointillist painting
+fauvist painting
+cubist painting
+art nouveau illustration
+art deco illustration
+Belle Époque illustration
+1950s travel illustration
+constructivist graphic art
+Bauhaus graphic design
+Swiss modernist graphic art
+ligne claire comic art
+1960s comic book art
+manga art
+children's picture book illustration
+storybook watercolour
+watercolour painting
+loose ink and watercolour sketch
+gouache illustration
+acrylic painting
+plein-air oil sketch
+tonalist painting
+Atkinson Grimshaw style moonlit painting
+Whistler style nocturne
+Edward Hopper style painting
+Canaletto style cityscape
+Caspar David Friedrich style painting
+Vincent van Gogh style painting
+Claude Monet style painting
+Gustav Klimt style painting
+Vilhelm Hammershøi style painting
+Hiroshige style woodblock print
+Hokusai style woodblock print
+Japanese woodblock print
+German expressionist woodcut
+linocut print
+etching
+mezzotint
+lithograph
+risograph print
+screen print
+chalk pastel drawing
+charcoal drawing
+graphite pencil drawing
+coloured pencil drawing
+ballpoint pen drawing
+architectural ink drawing
+white ink drawing on blue paper
+cutaway illustration
+medieval illuminated miniature painting
+Flemish tapestry
+stained glass window
+Byzantine mosaic
+Delft blue tile painting
+embroidery
+paper cut-out collage
+layered papercraft diorama
+miniature model photograph
+claymation still
+felt and wool craft
+LEGO-like brick model
+isometric pixel art
+16-bit pixel art scene
+low poly 3D render
+claymorphic 3D render
+vaporwave artwork
+synthwave artwork
+psychedelic 1960s art
+naive folk art painting
+outsider art
+Chinese ink wash painting
+fresco
+oil painting on wood panel
+matte painting
+concept art
+Studio Ghibli-like background painting
+1930s animated cartoon
+1980s anime background
+Victorian engraving
+botanical watercolour
+Persian miniature painting
+trompe-l'oeil mural
+street mural
+chalk drawing on dark paper
+watercolour on old paper
+
+## palettes
+muted teal and orange
+soft pastels
+sepia tones
+deep indigo and gold
+faded 1970s colours
+vivid primary colours
+earthy ochre and umber
+cool blue-grey
+warm amber
+pink and mint
+emerald and burgundy
+duotone red and black
+neon pink and cyan
+monochrome green
+autumn russet
+candy colours
+dusty rose
+ivory and charcoal
+lemon yellow and navy
+rust and turquoise
+lavender haze
+coral and seafoam
+high contrast
+washed-out low contrast
+rich jewel tones
+olive and mustard
+silver and slate
+terracotta and cream
+cobalt blue
+copper and verdigris
+plum and peach
+forest green and brass
+black, white and one red accent
+golden yellow and violet
+
+
+# ---- more parts (added 2026-11-08); a repeated "## name" adds to that list ----
+
+## settings
+the city hall with its Gothic and Renaissance facades
+the neo-Gothic old post office on the Korenmarkt
+the old crossbow guild hall
+the little tower on the Vrijdagmarkt
+the decorated old facades of the Kraanlei
+the Romanesque grain warehouse on the Graslei
+Saint James' Church
+Saint Michael's Church
+Saint Anne's Church
+Saint Stephen's Church of the Augustinians
+Our Lady of Saint Peter's Church
+the tower of Saint Bavo's Cathedral
+the carillon room high in the Belfry
+the clockwork room inside the Belfry
+the neoclassical university hall with its columns
+the old university forum building
+the Handelsbeurs concert hall
+the Capitole theatre
+the Minard theatre
+an art-house cinema in an old house
+a contemporary art museum in a former casino
+the columned hall of the fine arts museum
+the old indoor velodrome in the Citadelpark
+the art deco Van Eyck swimming pool
+Baudelo park with its old abbey chapel
+the Turkish bakeries of the Sleepstraat
+a multicultural shopping street in Ledeberg
+the Muide harbour neighbourhood
+the converted grain silos of the old docks
+the square with the statue of a cotton-spinning pioneer
+an old mustard shop with wooden barrels
+a vast exhibition hall
+a football stadium on match day
+a garden-city neighbourhood of little cottages
+a 1960s housing estate with tower blocks
+a street of art deco facades
+a street of houses with bay windows
+a suburban street with neat hedges
+a villa neighbourhood with old trees
+a glass apartment block
+a modern office tower at night
+an industrial estate
+a railway yard with old carriages
+a container terminal at the port
+a grain silo by the docks
+a power station chimney
+wind turbines at the edge of the port
+an underpass covered in murals
+a ring road overpass
+a car park at night
+a cycle highway along the railway
+a roundabout with a large sculpture
+a tramline through a narrow street
+a tram turning a corner
+a bus stop in a quiet street
+a Flemish kitchen with blue tiles
+a student room with fairy lights
+an old pharmacy with wooden drawers
+an old hardware shop
+a lace shop
+a hat shop
+a toy shop window
+a repair café
+a piano workshop
+an organ builder's workshop
+a printing workshop
+a violin maker's workshop
+a watchmaker's bench
+a bakery at four in the morning
+a waffle bakery
+a jenever tasting room
+a beer café cellar
+a jazz club
+an old dance hall
+a ballroom
+an old cinema auditorium
+a theatre balcony
+a church organ loft
+a museum storeroom
+an archive with endless shelves
+a university laboratory
+an old anatomy theatre
+a beekeeper's shed
+a hayloft
+a stable with horses
+a dovecote
+a cellar full of bottles
+a rooftop water tower
+a fire escape
+a stairwell with stained-glass windows
+an art nouveau stairwell
+a mosaic-floored entrance hall
+a public bathhouse
+a boxing club
+a dance studio
+a music school practice room
+a puppet maker's workshop
+the costume store of the opera
+a scenery painting workshop
+a flower auction hall
+a bicycle shed
+a garage workshop
+a car wash at night
+a hair salon
+a pet shop
+a fishing tackle shop
+a wool shop
+a fabric market
+a carpet shop
+a lamp shop full of lit lamps
+a scrapyard
+a garden centre
+a florist's cold room
+a school gym
+a classroom
+a kindergarten
+a children's corner in a library
+a bookshop basement
+a board game café
+a chess club
+a bingo hall
+a snooker hall
+an amusement arcade
+a karaoke bar
+a nightclub dance floor
+a late-night snack bar
+a Moroccan tea house
+an Italian ice cream parlour
+a Chinese restaurant
+a fish restaurant
+a mussels restaurant
+a tearoom
+a chocolatier's workshop
+a brewery tasting room
+a wine bar
+a basketball court
+a football pitch
+a tennis club
+a rowing club boathouse
+an outdoor swimming pool
+a campsite
+a riding school
+a sheep meadow at the edge of town
+a cornfield
+a sunflower field
+an apple orchard outside town
+a strawberry farm
+a pumpkin patch
+a tree nursery
+an abbey farm
+a moated farmhouse
+a windmill outside town
+a small field chapel
+a wayside shrine on a country road
+a dike path
+a cycle path through fields
+the edge of a beech forest
+a pop-up beach in the city
+a winter ice rink on a square
+an outdoor concert stage
+a circus winter quarters
+a car boot sale
+a farmers' market
+a Sunday bird market
+a book market
+an antique market
+a food truck festival
+a chalk drawing festival
+a film set in an old street
+a vacant lot full of wildflowers
+a pop-up garden
+a demolition site
+a church square on market day
+a quiet square at the end of a tram line
+a bakery queue on a Sunday morning
+a hospital garden with benches
+a cemetery chapel garden
+a rooftop greenhouse
+a balcony garden
+a backyard with a trampoline
+a terrace of a riverside café
+a student party in a courtyard
+a laundromat at midnight
+
+## situations
+a lost glove on a railing
+a kite festival
+the first snow of the year
+the first warm day of spring
+a heatwave, everyone in the shade
+a sudden hailstorm
+a rainbow after the rain
+fog rolling in
+a windy day, umbrellas turned inside out
+leaves swirling around
+a puddle reflecting everything
+an eclipse
+a full moon rising
+a meteor shower
+a street lit only by candles
+a lantern parade
+a torchlight procession
+a funfair at closing
+a market at dawn
+a bakery's first batch of the day
+a milk delivery
+a newspaper delivery at dawn
+a dog waiting outside a shop
+a cat on a windowsill
+a parrot escaped from its cage
+a flock of geese crossing the road
+a horse loose in the street
+a family of ducks crossing
+a hedgehog crossing at night
+bees swarming
+butterflies everywhere
+a heron on a lamp post
+seagulls stealing chips
+a sleeping fox
+a hot-air balloon landing in a field
+a tram decorated for a festival
+a vintage tram ride
+a bicycle parade
+a roller-skating party
+a skateboarder mid-jump
+a tightrope walker between towers
+a stilt walker
+a juggler on a unicycle
+a living statue performer
+a fire-eater at night
+a street magician
+a mime
+a flash mob dancing
+a tango evening in the square
+a silent disco
+an orchestra rehearsing outside
+a children's choir
+a bell ringer at work
+a carillon concert
+an organ grinder with a monkey toy
+a puppet theatre for children
+a shadow play
+an outdoor film screening
+a fashion shoot
+a wedding in the rain
+a christening party
+a retirement party
+a graduation day
+a school photo being taken
+a class trip with a teacher
+children on a scavenger hunt
+a game of hide and seek
+a snowball fight
+a water fight
+a pillow fight
+a sandcastle competition
+a pie-eating contest
+a dog show
+a cat show
+a flower show
+a vegetable growing contest
+a bake sale
+a lemonade stand run by children
+a jumble sale
+a garage sale
+a house being painted
+a roof being repaired
+a mural being painted
+a statue being cleaned
+a clock being repaired
+a bell being lifted into a tower
+windows being washed on a tall building
+a tree being planted
+a tree being cut down
+a fallen tree after a storm
+a power line being repaired
+a road being resurfaced at night
+a burst water pipe, a little fountain
+a lost hat blowing away
+a delivery of a grand piano
+a delivery of a huge mirror
+a bed being carried down the street
+a sofa left on the pavement
+a fridge on a bicycle trailer
+a removal van, boxes everywhere
+an artist painting a facade
+a sculptor carving stone
+a glassblower demonstrating
+a blacksmith at a fair
+a potter at a wheel
+a weaver at a loom
+a lacemaker at her doorstep
+a beekeeper collecting honey
+a shepherd with a flock in town
+a farmer selling from a cart
+a fishmonger shouting prices
+a waiter balancing many plates
+a chef smoking on a back step
+students studying on the grass
+a philosopher on a bench
+two old friends playing cards
+a man reading a newspaper on a bench
+a woman feeding pigeons
+a child with an ice cream
+a toddler chasing bubbles
+a boy flying a paper plane
+a girl on a swing
+grandparents on a tandem
+a couple sharing an umbrella
+strangers sheltering from rain
+a busker packing up
+the last tram of the night
+the first tram of the morning
+an empty street at 5 a.m.
+a bakery light on in a dark street
+a night watchman's round
+a lamplighter at dusk
+a power cut in the whole street
+a street party at midnight
+a New Year's Eve countdown
+fireworks over the rooftops
+a carnival procession with confetti
+a Saint Nicholas parade
+a Christmas choir
+an Easter egg hunt
+Halloween pumpkins on doorsteps
+a harvest festival
+a summer solstice picnic
+a lazy summer afternoon
+a rainy Monday morning
+a Sunday afternoon stroll
+
+## viewpoints
+from a hot-air balloon
+from a church tower
+from a crane cab
+from an attic skylight
+from a fire escape
+from a canal boat
+from a bus window
+from a train window
+from a car window
+from a café window
+from inside a phone booth
+from under a table
+from under an umbrella
+from inside a shop window display
+from behind a curtain
+through falling snow
+through rain on glass
+through steam
+through a dusty window
+through a stained-glass window
+through a gate
+through leaves
+through tall grass
+through a fence
+through a magnifying glass
+through a fishbowl
+through a crystal ball
+in a spoon reflection
+in a shop's mirror
+in the window of a passing tram
+in a soap bubble
+from the height of a cat
+from the height of a child
+from the height of a pigeon
+looking straight up
+looking straight down a stairwell
+looking down a long street
+looking down a corridor
+looking out of a doorway
+looking in through a window
+over a rooftop edge
+along a railway track
+along a wall
+along a row of houses
+at the end of an alley
+from the far side of a square
+long shot
+medium shot
+close-up
+two-shot
+group portrait framing
+diorama-like overview
+panorama stitched from several frames
+split view, inside and outside
+mirror symmetry
+off-kilter handheld snapshot
+slow shutter ghosting
+freeze-frame mid-action
+soft focus
+crisp detailed focus
+vignette framing
+oval vignette
+circular frame
+letterbox framing
+
+## styles
+Jan van Eyck style painting
+Hieronymus Bosch style painting
+Hans Memling style painting
+Rogier van der Weyden style painting
+Jacob Jordaens style painting
+Anthony van Dyck style painting
+David Teniers style tavern painting
+Jan Brueghel style painting
+Frans Hals style painting
+Rembrandt style painting
+Jan Steen style painting
+Pieter de Hooch style painting
+Hendrick Avercamp style winter painting
+Jacob van Ruisdael style landscape
+Constant Permeke style painting
+Gustave Van de Woestyne style painting
+Valerius de Saedeleer style landscape
+Fernand Khnopff style symbolist painting
+Constantin Meunier style painting
+Edgard Tytgat style naive painting
+Jean Brusselmans style painting
+Frits Van den Berghe style painting
+Gustave De Smet style painting
+Anna Boch style painting
+Alfred Stevens style painting
+Victor Horta style art nouveau design
+J. M. W. Turner style painting
+John Constable style painting
+John Singer Sargent style painting
+Joaquín Sorolla style painting
+Anders Zorn style painting
+Isaac Levitan style painting
+Wassily Kandinsky style painting
+Paul Klee style painting
+Marc Chagall style painting
+Joan Miró style painting
+Henri Matisse style painting
+Pierre Bonnard style painting
+Édouard Vuillard style painting
+Henri de Toulouse-Lautrec style painting
+Paul Cézanne style painting
+Pierre-Auguste Renoir style painting
+Edgar Degas style pastel
+Camille Pissarro style painting
+Alfred Sisley style painting
+Gustave Caillebotte style painting
+Edvard Munch style painting
+Egon Schiele style drawing
+Ernst Ludwig Kirchner style painting
+Franz Marc style painting
+August Macke style painting
+Lyonel Feininger style painting
+Giorgio de Chirico style painting
+Salvador Dalí style painting
+M. C. Escher style print
+Henri Rousseau style painting
+Amedeo Modigliani style painting
+Norman Rockwell style painting
+Grant Wood style painting
+Piet Mondrian style painting
+Kazimir Malevich style painting
+Hasui Kawase style shin-hanga print
+Utagawa Kuniyoshi style print
+Ito Jakuchu style painting
+Kay Nielsen style illustration
+Arthur Rackham style illustration
+Edmund Dulac style illustration
+John Bauer style illustration
+Ivan Bilibin style illustration
+Beatrix Potter style watercolour
+Carl Larsson style watercolour
+Ernest Shepard style drawing
+Mary Blair style illustration
+Tove Jansson style illustration
+egg tempera on gold leaf
+gold leaf icon painting
+encaustic painting
+Mughal miniature painting
+batik
+needlepoint
+cross-stitch sampler
+quilt
+origami diorama
+cardboard model
+matchstick model
+plasticine model
+porcelain figurines
+tin toy
+wooden toy
+snow globe miniature
+terrarium diorama
+shadow box
+paper toy theatre
+magic lantern slide
+autochrome photograph
+tintype photograph
+wet plate collodion photograph
+Lomography photograph
+Holga camera photograph
+CCTV still
+thermal camera image
+night vision image
+x-ray image
+Super 8 film still
+VHS still
+1990s point-and-shoot photograph
+drone photograph
+Fuji Velvia slide photograph
+grainy Ilford film photograph
+cross-processed photograph
+pinhole camera photograph
+anaglyph 3D image
+double exposure photograph
+photomontage
+Dada collage
+De Stijl composition
+pop art
+op art
+minimalist illustration
+sumi-e ink painting
+Korean minhwa painting
+Palekh lacquer miniature
+majolica painting
+Iznik tile painting
+Mexican muralism
+socialist realist painting
+1930s public works mural
+Italian futurist painting
+vorticist painting
+precisionist painting
+magic realist painting
+New Objectivity painting
+symbolist painting
+Pre-Raphaelite painting
+rococo painting
+romantic painting
+neoclassical painting
+Biedermeier painting
+Barbizon school painting
+Hague School painting
+Nabis painting
+orphist painting
+cloisonnist painting
+Jugendstil illustration
+Vienna Secession illustration
+Arts and Crafts illustration
+William Morris pattern
+mid-century modern illustration
+UPA style cartoon
+rubber hose cartoon
+cel animation still
+rotoscoped animation still
+1990s anime still
+voxel art
+ray-traced 3D render
+PS1-era 3D graphics
+glitch art
+low-resolution CRT image
+gum bichromate print
+platinum print
+salt print
+aquatint
+drypoint
+scratchboard illustration
+cut-paper silhouette
+marquetry
+pietra dura inlay
+cloisonné enamel
+carved wooden relief
+marble bas-relief
+sand sculpture
+ice sculpture
+pavement chalk art
+light painting photograph
+neon light art
+projection mapping on a facade
+
+## palettes
+midnight blue and silver
+blood orange and plum
+sage and sand
+mint and chocolate
+cherry red and cream
+moss and stone
+honey and smoke
+ice blue and white
+fire red and gold
+seafoam and sand
+lilac and lemon
+tomato red and teal
+pine green and snow
+mauve and grey
+bubblegum pink and sky blue
+turquoise and coral
+indigo and rust
+ochre and teal
+graphite and neon green
+peacock blue and gold
+champagne and blush
+denim and white
+khaki and orange
+brick red and cream
+pistachio and rose
+storm grey and yellow
+violet and lime
+cocoa and caramel
+pewter and pale blue
+ruby and emerald
+sapphire and amber
+saffron and indigo
+cinnamon and cream
+lavender and sage
+amber and black
+cyan and magenta
+orange and blue
+red, yellow and blue
+black and gold
+white on white
+grey with one yellow accent
+sepia with one blue accent
+faded Polaroid colours
+Technicolor
+Kodachrome colours
+early autochrome colours
+bleach bypass
+infrared pink foliage
+golden twilight
+blue hour cold
+sodium-lamp orange
+fluorescent green tint
+candlelight warmth
+moonlight blue
+overcast pearl grey
+sunset pink and purple
+dawn pastels
+rainy day greys
+autumn gold and brown
+spring greens and pinks

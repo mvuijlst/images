@@ -1,0 +1,31 @@
+[project]
+name = "images"
+version = "0.1.0"
+description = "Local DALL·E Mega and Stable Diffusion 1.5 image generation"
+license = "MIT"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "torch>=2.8",
+    "torchvision",
+    "min-dalle==0.4.11",
+    "numpy",
+    "pillow",
+    "requests",
+    "spandrel>=0.4.2",
+    "pyside6-essentials>=6.8",
+    "diffusers>=0.42",
+    "transformers",
+    "accelerate",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
