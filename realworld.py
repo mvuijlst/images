@@ -630,14 +630,15 @@ def clip_length(text: str) -> int:
 
 
 def fit_prompt(scene: list[str], tail: dict[str, str], keep: str = "") -> tuple[str, list[str]]:
-    """When, the setting (first scene tag), the weather, the rest of the scene, then season, view, style,
-    palette (time and weather come early, or SD 1.5 all but ignores them); trimmed to fit CLIP_LIMIT so the
-    style at the end always survives. Trimmed in order: the palette, the season, scene details beyond three, long
+    """When, the style, the setting (first scene tag), the weather, the rest of the scene, then season, view,
+    palette (time, style and weather come early, or SD 1.5 all but ignores them: with the style last, night
+    frames lost it to the dark redraw and came out alike); trimmed to fit CLIP_LIMIT, never the style. Trimmed in order: the palette, the season, scene details beyond three, long
     sentence-like tags down to 8 words, the viewpoint, the weather, long tags down to 3 words.
     Words containing `keep` (the city), and the "in"/"near" before them, are never cut."""
     scene, tail, dropped = list(scene), dict(tail), []
-    front = ("when", "weather")
-    text = lambda: ", ".join(t for t in [tail.get("when", "")] + scene[:1] + [tail.get("weather", "")]  # noqa: E731
+    front = ("when", "style", "weather")
+    text = lambda: ", ".join(t for t in [tail.get("when", ""), tail.get("style", "")] + scene[:1]  # noqa: E731
+                             + [tail.get("weather", "")]
                              + scene[1:] + [v for k, v in tail.items() if k not in front] if t)
     fits = lambda: clip_length(text()) <= CLIP_LIMIT  # noqa: E731
 

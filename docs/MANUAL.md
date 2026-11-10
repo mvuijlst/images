@@ -44,10 +44,10 @@ slow slideshow of new images based on real things, each one made on the spot:
 - **Random words** (off by default; needs [Ollama](https://ollama.com)): a few words from `words.txt`
   (~2,750; 1–5 per image, default 3, set in the settings), a Ghent setting, sometimes a situation, and
   the real weather and time go to a small local LLM (default `qwen3.5:2b`), which makes one scene with
-  the words as its main subjects. The program then adds the time of day (first), the weather (as a full
-  phrase: "in light rain, wet reflections", "starry sky, moonlight", frost below 2 °C), a viewpoint, a
-  style and sometimes a colour palette, all from `scene_parts.txt` (about 325 Ghent settings, 235
-  situations, 120 viewpoints, 290 styles, 95 palettes). Every list hands out each item once before any
+  the words as its main subjects. The program then adds the time of day and a style (first), the weather
+  (as a full phrase: "in light rain, wet reflections", "starry sky, moonlight", frost below 2 °C), a
+  viewpoint and sometimes a colour palette, all from `scene_parts.txt` (about 325 Ghent settings, 235
+  situations, 120 viewpoints, 690 styles, 95 palettes). Every list hands out each item once before any
   comes back, and remembers where it was across restarts (`screensaver_bags.json`), so combinations
   practically never repeat. The caption shows the words, and under them the weather: "8 °C · clear sky ·
   night".
@@ -61,7 +61,13 @@ slow slideshow of new images based on real things, each one made on the spot:
   - A small model sometimes drops a word or copies an example: each scene gets up to three tries, scenes
     that copy an example are rejected, and a word that is still missing goes in as a plain tag. The
     model's own time of day is removed, the real one goes first in the prompt (or SD 1.5 ignores it), and
-    the prompt is trimmed to SD 1.5's 77 tokens so the style at the end always survives.
+    the prompt is trimmed to SD 1.5's 77 tokens, never cutting the style.
+  - **Styles** say what the picture is made of and how it looks ("two-colour linocut print, bold carved
+    lines, flat red and black"), not just a name: SD 1.5 knows few painters by name and turns the rest
+    into the same brown oil painting, and at night a vague style ("pavement chalk art") is lost in the dark
+    redraw while a well-described one (linocut, comic art) survives. The style comes right after the time
+    of day for the same reason. Styles that invite lettering (posters, postcards, covers, maps) are left
+    out. Add your own the same way.
   - Ollama is started (`ollama serve`) if it isn't running, and a model you name in the settings is
     pulled once. If it fails, the other sources fill in for 5 minutes. Nothing leaves the PC.
   - Try it without the screensaver: `uv run realworld.py Ghent --words`.

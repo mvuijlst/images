@@ -318,19 +318,19 @@ daguerreotype
 infrared photograph
 long exposure night photograph
 cinematic film still
-Flemish primitive oil painting
+Flemish primitive oil painting, jewel colours, minute detail, luminous glaze
 Pieter Bruegel the Elder style painting
 Rubens style baroque painting
 Dutch golden age painting
 Vermeer style painting
-James Ensor style painting
+James Ensor style painting, carnival masks, acid colours, crowded
 René Magritte style surrealist painting
-Paul Delvaux style dreamlike painting
-Léon Spilliaert style ink wash
-Emile Claus style luminist painting
-Théo van Rysselberghe style pointillist painting
-Flemish expressionist painting
-Rik Wouters style fauvist painting
+Paul Delvaux style painting, moonlit classical streets, dreamlike stillness
+Léon Spilliaert style ink wash, dark empty seafront, black and grey
+Emile Claus style luminist painting, sunlight dappled on fields, glowing
+Théo van Rysselberghe style pointillist painting, mosaic of colour dots
+Flemish expressionist painting, heavy earthy forms, dark outlines
+Rik Wouters style fauvist painting, bright patches of colour, white canvas showing
 impressionist oil painting
 post-impressionist painting
 pointillist painting
@@ -857,32 +857,32 @@ circular frame
 letterbox framing
 
 ## styles
-Jan van Eyck style painting
-Hieronymus Bosch style painting
-Hans Memling style painting
-Rogier van der Weyden style painting
-Jacob Jordaens style painting
+Jan van Eyck style painting, jewel colours, mirror-sharp detail, oil glaze
+Hieronymus Bosch style painting, swarming tiny fantastical creatures
+Hans Memling style painting, serene, clear light, fine detail
+Rogier van der Weyden style painting, sculptural folds, gold and crimson
+Jacob Jordaens style painting, boisterous feast, warm flesh tones
 Anthony van Dyck style painting
-David Teniers style tavern painting
-Jan Brueghel style painting
+David Teniers style tavern painting, brown interior, small lively figures
+Jan Brueghel style painting, tiny detailed figures, blue distant landscape
 Frans Hals style painting
 Rembrandt style painting
 Jan Steen style painting
 Pieter de Hooch style painting
-Hendrick Avercamp style winter painting
+Hendrick Avercamp style winter painting, frozen canal, many tiny skaters
 Jacob van Ruisdael style landscape
-Constant Permeke style painting
-Gustave Van de Woestyne style painting
-Valerius de Saedeleer style landscape
-Fernand Khnopff style symbolist painting
-Constantin Meunier style painting
-Edgard Tytgat style naive painting
-Jean Brusselmans style painting
-Frits Van den Berghe style painting
-Gustave De Smet style painting
-Anna Boch style painting
-Alfred Stevens style painting
-Victor Horta style art nouveau design
+Constant Permeke style painting, massive dark earthy figures, thick paint
+Gustave Van de Woestyne style painting, mystical, elongated, muted colour
+Valerius de Saedeleer style landscape, bare trees, snowy fields, high horizon, silent
+Fernand Khnopff style symbolist painting, pale, silent, enigmatic
+Constantin Meunier style painting, coal miners, dark industrial realism
+Edgard Tytgat style naive painting, toy-like figures, fairground colours
+Jean Brusselmans style painting, flat geometric landscape, hard outlines
+Frits Van den Berghe style painting, surreal, dark glowing colours, distorted
+Gustave De Smet style painting, cubist village, warm ochre, simplified forms
+Anna Boch style painting, bright impressionist sunlight, coastal colour
+Alfred Stevens style painting, elegant salon interior, silk dresses
+Victor Horta style art nouveau interior, iron whiplash curves, mosaic floors
 J. M. W. Turner style painting
 John Constable style painting
 John Singer Sargent style painting
@@ -1095,3 +1095,415 @@ dawn pastels
 rainy day greys
 autumn gold and brown
 spring greens and pinks
+
+# ---- many more styles (added 2026-11-10). Each says what the picture is made of or how it looks, not just
+# a name: SD 1.5 knows few painters by name and falls back to a generic brown oil painting for the rest.
+# Styles that invite lettering (posters, postcards, covers, stamps, maps, signs) are left out on purpose. ----
+## styles
+# printmaking
+two-colour linocut print, bold carved lines, flat red and black
+three-colour woodcut, visible wood grain, flat ink
+reduction linocut, layered flat colours, carved texture
+Swiss wood engraving, fine parallel lines, black and white
+Gustave Doré style engraving, dramatic cross-hatching
+Piranesi style etching, vast architecture, deep shadows
+Albrecht Dürer style engraving, precise hatching
+Hans Holbein style woodcut, crisp outlines
+Félix Vallotton style woodcut, solid black shapes
+Frans Masereel style woodcut, stark black and white
+Käthe Kollwitz style charcoal lithograph
+monotype print, soft painterly ink blots
+collagraph print, rough textured surfaces
+chine-collé print on thin coloured paper
+cyanotype photogram, white silhouettes on Prussian blue
+blind embossed paper relief, white on white
+stencil print, sprayed edges, two colours
+Japanese mokuhanga print, soft gradated colour, bokashi sky
+Kawase Hasui style night print, deep indigo, glowing lanterns
+Yoshida Hiroshi style woodblock print, calm water, soft light
+Ohara Koson style kacho-e print, birds and branches
+Utagawa Hiroshige style rain print, slanting lines
+Chinese New Year print, bright folk colours, bold outlines
+Russian lubok print, naive hand-coloured woodcut
+Mexican papel picado style cut paper, bright tissue colours
+Polish wycinanki paper cut, symmetrical bright folk shapes
+silkscreen print, offset colour layers, halftone dots
+Andy Warhol style silkscreen, garish flat colour blocks
+Roy Lichtenstein style painting, Ben-Day dots, thick black outlines
+risograph print, grainy fluorescent pink and teal, misregistered
+duotone print, deep blue and orange
+halftone newspaper photograph, coarse black dots
+photogravure, rich velvety blacks, soft tones
+# drawing
+silverpoint drawing, delicate grey lines on toned paper
+red chalk sanguine drawing on cream paper
+sepia ink drawing with quill pen
+brush pen drawing, bold calligraphic strokes
+fineliner urban sketch with light watercolour wash
+architect's pencil perspective drawing, ruled lines
+technical cutaway drawing, exploded view, fine lines
+scratchboard illustration, white lines carved from black
+stippled ink illustration, thousands of tiny dots
+crosshatched pen and ink, Victorian book illustration
+charcoal and white chalk on grey paper
+conté crayon drawing, warm earth tones
+oil pastel drawing, thick waxy strokes
+crayon drawing by a child, wobbly lines, bright wax colours
+felt-tip marker drawing, saturated flat colour
+biro doodle in the margin of a notebook, blue ink
+courtroom sketch, quick pastel strokes
+fashion illustration, elegant gouache and ink
+Edward Gorey style pen drawing, gloomy fine hatching
+Quentin Blake style illustration, scratchy ink and loose watercolour
+Ronald Searle style drawing, spiky ink lines
+Sempé style drawing, tiny figures, vast airy space
+Saul Steinberg style line drawing
+Aubrey Beardsley style illustration, black ink, flowing curves
+Harry Clarke style illustration, intricate jewel-like detail
+Heinrich Kley style ink drawing
+Moebius style comic art, clean lines, pale desert colours
+Hergé style ligne claire drawing, flat colours, clean outlines
+Franco-Belgian bande dessinée art, warm flat colour
+François Schuiten style drawing, monumental architecture, fine hatching
+Mike Mignola style comic art, heavy black shadows, flat colour
+Frank Miller style black and white comic, stark contrast
+Jack Kirby style comic art, dynamic cosmic energy
+underground comix, crosshatched ink, 1970s
+Chris Ware style drawing, precise flat colour, geometric
+manga illustration, screentone shading, black and white
+shoujo manga illustration, sparkling eyes, soft pastel
+gekiga manga, gritty ink, realistic
+# painting, by look
+Eyvind Earle style painting, stylised trees, rich gradients
+Charley Harper style illustration, geometric flat wildlife
+Mary Blair style concept art, bold flat colour, whimsical
+Simon Stålenhag style painting, muted Scandinavian landscape
+Greg Rutkowski style fantasy painting, dramatic light
+Alphonse Mucha style art nouveau, flowing hair, ornamental halo
+Tamara de Lempicka style painting, glossy art deco forms
+Georgia O'Keeffe style painting, smooth enlarged forms
+Andrew Wyeth style tempera, pale grass, quiet melancholy
+Edward Hopper style painting, empty light, long shadows
+Wayne Thiebaud style painting, thick creamy paint, bright shadows
+David Hockney style painting, flat bright colour, swimming pool blue
+Alex Katz style painting, flat colour, simplified forms
+Fernand Léger style painting, tubular forms, primary colours
+Sonia Delaunay style painting, colour circles
+Hilma af Klint style painting, spirals and petals, pastel geometry
+Friedensreich Hundertwasser style painting, wavy lines, onion domes, bright colours
+Gustav Klimt style golden painting, gold leaf, mosaic patterns
+Egon Schiele style painting, angular lines, raw colour
+Amedeo Modigliani style portrait, elongated faces
+Paul Gauguin style painting, flat tropical colour, dark outlines
+Henri Rousseau style jungle painting, dense leaves, naive
+Diego Rivera style mural, rounded figures, earthy colour
+Frida Kahlo style painting, folk symbolism, vivid colour
+Tarsila do Amaral style painting, rounded hills, warm colour
+Jacob Lawrence style painting, flat angular shapes, gouache
+Romare Bearden style collage, cut paper and paint
+Keith Haring style drawing, bold outlined dancing figures
+Jean-Michel Basquiat style painting, scrawled raw shapes
+Yayoi Kusama style painting, polka dots everywhere
+Bridget Riley style op art, rippling stripes
+Victor Vasarely style op art, bulging grid
+Wassily Kandinsky style composition, circles and lines
+Joan Miró style painting, floating black shapes, primary dots
+Paul Klee style painting, small coloured squares, childlike signs
+Marc Chagall style painting, floating figures, blue night
+Lyonel Feininger style painting, crystalline prisms of light
+Giorgio Morandi style still life, dusty muted bottles
+René Magritte style painting, clean sky, impossible objects
+Zdzisław Beksiński style painting, dusty dreamlike ruins
+Ivan Aivazovsky style seascape, luminous waves
+Albert Bierstadt style painting, golden haze, vast valley
+Thomas Cole style painting, romantic wilderness
+Arkhip Kuindzhi style painting, glowing moonlight
+Isaac Levitan style painting, quiet Russian landscape
+John Atkinson Grimshaw style painting, wet lamplit street at dusk
+Childe Hassam style painting, flag-lined street, impressionist
+Gustave Caillebotte style painting, wet cobblestones, wide perspective
+Henri Le Sidaner style painting, glowing windows at twilight
+Ilya Repin style painting, vivid realism
+Sorolla style painting, dazzling Mediterranean sunlight
+# painting, by medium
+thick impasto oil painting, palette-knife ridges
+alla prima oil painting, loose wet-on-wet brushwork
+grisaille painting, shades of grey only
+verdaccio underpainting, green-grey tones
+egg tempera on wood, matt jewel colours
+Pompeian fresco, faded red walls
+Renaissance fresco, chalky pastel colour
+Byzantine icon, gold background, flat saints
+Ethiopian Orthodox painting, bold outlines, large eyes
+Tibetan thangka painting, intricate mineral colours
+Indian Kalighat painting, bold sweeping outlines
+Pahari miniature painting, delicate colour
+Rajput miniature painting, flat bright colour, decorative borders
+Ottoman miniature painting, flat perspective
+Aboriginal dot painting, earth colours, concentric circles
+Haitian naive painting, lush bright colour
+Mexican amate bark painting, bright birds and flowers
+Huichol yarn painting, vivid yarn lines
+Ukrainian Petrykivka painting, floral brushstrokes
+Norwegian rosemaling, flowing floral scrolls
+Russian Zhostovo tray painting, flowers on black
+Khokhloma painting, gold and red on black
+Dutch Hindeloopen painting, folk flowers
+Pennsylvania dutch folk painting, flat stylised
+American folk art painting, flat naive perspective
+Grandma Moses style painting, naive village life
+Maud Lewis style painting, cheerful naive colour
+Bob Ross style landscape, happy little trees, wet-on-wet
+Thomas Kinkade style painting, glowing cottage windows
+reverse glass painting, glossy bright colour
+enamel paint on tin, folk retablo
+Chinese gongbi painting, fine lines, delicate colour
+Chinese blue-green landscape painting, mineral colours
+Japanese sumi-e, a few bold brushstrokes, empty paper
+Japanese byobu folding screen, gold leaf clouds
+Rinpa school painting, gold and silver, bold shapes
+Korean ink painting, misty mountains
+watercolour on wet paper, soft bleeding colour
+loose urban sketching watercolour, splashes
+botanical illustration, precise watercolour on white
+Victorian fairy painting, delicate gauzy detail
+airbrush painting, smooth chrome gradients, 1980s
+gouache on black paper, glowing colours
+spray paint graffiti mural, bold wildstyle shapes
+stencil graffiti, Banksy-like, black spray on wall
+pavement chalk art, smudged pastel colours on asphalt
+sand painting, coloured sand
+coffee painting, brown washes
+ink and coffee stains on old paper
+# photography
+tilt-shift photograph, tiny miniature-looking world
+macro photograph, shallow depth of field
+fisheye photograph, curved horizon
+infrared false-colour photograph, white trees, red sky
+long exposure photograph, silky water, light trails
+night street photograph, neon reflections, Fujifilm
+flash photograph at night, harsh shadows, red-eye
+1980s Kodak snapshot, warm faded colours
+Instax photograph, soft creamy colours
+Agfa Vista photograph, punchy reds
+Portra 400 photograph, soft pastel skin tones
+Ektachrome slide, cool saturated blues
+Cinestill 800T photograph, red halation around lights
+Tri-X black and white photograph, gritty grain
+Lith print, warm brown blacks, grainy highlights
+platinum palladium print, warm soft greys
+pictorialist photograph, soft-focus, gum print
+stereoscope card photograph, sepia
+1920s autochrome, grainy pastel colour
+1940s Kodachrome photograph, rich red and blue
+1960s Ektacolor print, faded cyan
+1970s Polaroid SX-70, soft green-yellow tint
+1990s disposable camera photograph, harsh flash, green cast
+early digital camera photograph, 2003, noisy, blown highlights
+webcam still, low resolution, blue cast
+dashcam still, wide angle
+security camera still, high angle, washed out
+trail camera photograph at night, infrared grey
+satellite photograph, straight down
+aerial photograph from a small plane, low sun
+underwater photograph, green-blue murk
+astrophotograph, star trails
+photograph through frosted glass
+photograph through a rainy window, bokeh
+reflection photograph in a shop window, layered
+motion blur photograph, panning
+Wes Anderson style film still, symmetrical, pastel colour
+Wong Kar-wai style film still, smeared neon, step-printed blur
+Stanley Kubrick style film still, one-point perspective
+Andrei Tarkovsky style film still, wet, misty, muted green
+Federico Fellini style film still, carnival dreamlike
+Jacques Tati style film still, modernist, pastel
+film noir still, venetian blind shadows, black and white
+German expressionist film still, crooked painted sets
+1950s Technicolor film still, saturated primaries
+giallo film still, lurid red and green light
+1970s Italian western still, dusty orange, wide lens
+1980s VHS horror still, lurid colour, tracking lines
+French New Wave film still, grainy black and white
+Bollywood film still, vivid colour, dramatic light
+Hong Kong action film still, teal and neon
+silent film still, flickering sepia, vignette
+Ingmar Bergman style film still, stark black and white, northern light
+David Lynch style film still, red curtains, uncanny
+Twin Peaks style still, misty pine forest, diner light
+Studio Ghibli style film still, painted clouds, cosy detail
+Makoto Shinkai style anime still, glowing sky, lens flare
+Satoshi Kon style anime still, sharp realism
+1980s cel anime, hand-painted backgrounds, VHS colour
+Cartoon Saloon style animation, flat Celtic shapes
+Disney 1950s background painting, Eyvind Earle trees
+UPA style limited animation, flat shapes
+Fleischer 1930s cartoon, rubber hose, black and white
+Aardman claymation still, plasticine, fingerprints
+Laika stop-motion still, handmade miniature set
+Tim Burton style stop-motion, spindly gothic
+Pixar style 3D animation still, soft lighting
+Wallace and Gromit style clay world
+Moomin style illustration, soft pastel, round shapes
+# 3D and digital
+octane render, glossy materials, studio lighting
+Unreal Engine 5 render, cinematic
+isometric 3D diorama, soft shadows
+low poly landscape, faceted, pastel gradients
+voxel art scene, cubes
+clay render, matte white, soft shadows
+glass render, everything made of glass, refractions
+chrome render, liquid metal surfaces
+inflatable 3D render, puffy shiny plastic
+toy-like 3D render, rounded, candy colours
+Nintendo 64 era graphics, blurry textures
+Game Boy screen, four shades of green
+8-bit NES pixel art, limited palette
+32-bit SNES-era pixel art, parallax background
+point-and-click adventure game background, painted pixels
+LucasArts adventure game background, 1990s
+Myst-like pre-rendered 3D scene
+Windows 95 era 3D screensaver
+vector illustration, flat colours, clean shapes
+corporate flat illustration, purple and pastel
+glitch art, datamoshed pixels, RGB split
+neon synthwave grid, magenta and cyan
+vaporwave collage, marble busts, pink and teal
+cyberpunk neon cityscape style, rain and holograms
+solarpunk illustration, green and gold, bright
+steampunk illustration, brass and gears
+dieselpunk painting, smoky industrial art deco
+art deco streamline moderne illustration, chrome curves
+retro-futurism 1950s illustration, rocket age optimism
+Syd Mead style futurist illustration, sleek vehicles
+1970s sci-fi paperback art, airbrushed space
+Roger Dean style painting, floating islands, organic arches
+# crafts and materials
+knitted wool scene, chunky stitches
+crochet amigurumi figures, yarn texture
+needle felted wool diorama, fuzzy fibres
+patchwork quilt, calico pieces and stitching
+appliqué fabric picture, stitched edges
+cross-stitch picture, tiny coloured crosses on aida cloth
+crewel embroidery, wool on linen, Jacobean
+gold thread embroidery, raised metallic stitches
+Gobelin tapestry, woven wool, muted colours
+Persian carpet design, intricate medallion
+kilim weaving, geometric flat-weave
+batik fabric, crackled wax lines, indigo
+Japanese shibori indigo dye
+tie-dye fabric, swirling colours
+paper quilling, rolled paper strips
+pop-up book, folded paper layers
+kirigami, cut and folded white paper
+cut paper shadow box, layered silhouettes, backlit
+Lotte Reiniger style silhouette animation, black paper on colour
+shadow puppet theatre, backlit translucent leather
+Javanese wayang puppet, intricate perforated leather
+paper mâché sculpture, painted newspaper
+cardboard sculpture, corrugated edges
+balsa wood model, pale wood
+model railway diorama, static grass and tiny figures
+dollhouse interior, miniature furniture
+Playmobil figures scene, plastic
+toy soldiers diorama, painted tin
+Christmas nativity crèche figures
+wood carving, chiselled lime wood, Grinling Gibbons
+intarsia wood inlay, different coloured woods
+lacquerware, red and black, gold detail
+Japanese maki-e, gold dust on black lacquer
+cloisonné enamel, thin gold wire, bright fills
+champlevé enamel on copper
+Limoges painted enamel
+Fabergé egg style, jewels and gold
+stained glass, thick lead lines, glowing colour
+Tiffany lamp glass, dragonflies and amber light
+Venetian murano glass, swirled colour
+mosaic of small glass tesserae, Ravenna
+Roman floor mosaic, stone tesserae, earth colours
+Gaudí trencadís mosaic, broken ceramic tiles
+azulejo tiles, blue and white Portuguese
+Delftware plate painting, blue on white
+Chinese blue and white porcelain painting
+Greek red-figure vase painting, terracotta and black
+Greek black-figure pottery painting
+Egyptian tomb painting, profile figures, ochre
+Minoan fresco, dolphins, blue and ochre
+cave painting, ochre on rock
+petroglyph carved in sandstone
+Carolingian manuscript painting
+Mughal garden painting, gold borders
+heraldic illustration, flat tinctures
+sugar sculpture, translucent pastel
+gingerbread house, icing details
+cake decoration, fondant and sugar flowers
+latte art in foam
+sand castle sculpture, wet sand detail
+snow sculpture, white carved snow
+ice hotel sculpture, blue translucent ice
+bronze sculpture, green patina
+marble statue, polished white stone
+terracotta figurines
+wax figures, slightly uncanny
+taxidermy museum diorama, painted backdrop
+natural history museum diorama, painted sky
+plaster cast, white and chalky
+# graphic and design traditions
+Bauhaus composition, primary colours, circles and bars
+Russian constructivist composition, red and black diagonals
+De Stijl grid, primary colour blocks
+1970s supergraphics, bold stripes, orange and brown
+psychedelic 1960s swirling colour, liquid light show
+mid-century Scandinavian illustration, folk shapes, muted colour
+Soviet children's book illustration, 1960s, bright flat colour
+Czech 1970s illustration, whimsical, textured
+Polish school illustration, surreal, painterly
+Japanese 1970s picture book illustration
+Golden Books style illustration, 1950s
+Richard Scarry style busy town illustration
+Beatrix Potter style watercolour, small animals
+E. H. Shepard style ink and watercolour
+Maurice Sendak style crosshatched illustration
+Tove Jansson style ink illustration, Moomin valley
+Jon Klassen style illustration, muted textured flat shapes
+Oliver Jeffers style illustration, loose and gentle
+Shaun Tan style painting, quiet surreal
+Brian Wildsmith style illustration, jewel-like colour patches
+Eric Carle style collage, painted tissue paper
+Leo Lionni style collage, torn paper
+Ezra Jack Keats style collage, patterned paper
+Dr. Seuss style illustration, curvy impossible architecture
+Hayao Miyazaki style watercolour storyboard
+William Morris wallpaper pattern, intertwined leaves and birds
+Arts and Crafts wood engraving, Kelmscott borders without text
+Art nouveau stained glass, whiplash curves
+toile de Jouy, pastoral scenes in one colour on cream
+Chinoiserie wallpaper, birds and blossoms on pale green
+Marimekko style pattern, big bold flowers
+tessellation, Escher-like interlocking animals
+# light and atmosphere as style
+chiaroscuro painting, single candle, deep darkness
+Caravaggio style painting, harsh spotlight, black background
+Georges de La Tour style painting, candlelight glow
+Joseph Wright of Derby style painting, lamplight in darkness
+nocturne painting, deep blue and gold lamplight
+tenebrism, figures emerging from darkness
+luminism, glowing still air
+tonalism, soft brown-green haze
+backlit silhouette photograph, rim light
+moonlit painting, silver-blue light, long shadows
+lantern-lit scene, warm glow pools in darkness
+neon noir, wet streets, pink and blue reflections
+bioluminescent glow, dark blue and cyan
+candlelit Dutch interior, warm darkness
+foggy cinematic photograph, volumetric light rays
+blue hour photograph, city lights coming on
+snow at night photograph, orange streetlight glow
+x-ray photograph, translucent white on black
+thermal camera image, rainbow heat colours
+negative film image, inverted colours
+solarised photograph, Man Ray, silver tones
+cyanotype on fabric, deep blue
+lumen print, ghostly purple and orange
+photogram, white shapes on black
+light painting photograph, glowing scribbles
