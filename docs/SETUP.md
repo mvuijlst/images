@@ -78,9 +78,11 @@ Open a new terminal afterwards so `ffmpeg` is on the PATH.
 
 ## First start of the screensaver
 
-The settings open by themselves the first time. Pick your town (only its coordinates go to Open-Meteo
-for the weather), the sources, the monitor and how long each image stays. They are kept in
-`screensaver_settings.json`, which is not part of the repository. The random-words source and its scene
+Double-click `Screensaver Settings.lnk` (or `uv run screensaver_settings.py`), or just start the
+screensaver: the settings open by themselves the first time. Pick your town (only its coordinates go to
+Open-Meteo for the weather), what the pictures are based on, the monitor, timing and image size; the
+[manual](MANUAL.md#settings) describes every tab. They are kept in `screensaver_settings.json`, which is
+not part of the repository. The random-words source and its scene
 lists (`scene_parts.txt`, `llm_prompt.txt`) are written around Ghent, Belgium; edit them for your own
 town.
 

@@ -120,10 +120,23 @@ images don't target real people or brands; news and history use painting/illustr
 nothing looks like a photo of a real event; headlines and events with distressing words (an editable
 list) are skipped; SD's safety filter is on, and blacked-out images are skipped.
 
-The first start opens the settings: your town (only its coordinates are sent to Open-Meteo), which
-sources to use, the feeds, the filter words, the **monitor** ("Identify monitors" shows their numbers),
-seconds per image (default 60), captions, clock, and model (Stable Diffusion fills the screen; DALL·E
-Mega's squares sit on a blurred backdrop), and saving. Settings are kept in `screensaver_settings.json`.
+### Settings
+
+Open them with **`Screensaver Settings.lnk`** (or `uv run screensaver_settings.py`) without starting the
+screensaver, with O or right-click → Settings while it runs, or `uv run screensaver.pyw --settings`. The
+first start opens them by itself. They are kept in `screensaver_settings.json`.
+
+| Tab | |
+|---|---|
+| **Place** | your town (looked up by name; only its coordinates are sent to Open-Meteo) or exact latitude and longitude, and a button that shows the weather, local time, sunrise and sunset there now |
+| **Pictures** | what images are based on: weather, random words (words per image, Ollama model and address), news (the feeds), on this day; the words that make a headline or event be skipped |
+| **Screen** | the monitor, on a map of your monitors as Windows arranges them (click one; "Identify monitors" shows their numbers on them), captions, clock, 12- or 24-hour clock |
+| **Timing** | how long each image stays (default 60 s), the crossfade (default 2.5 s; 0 is a cut), and quiet hours: between two times (which may run past midnight) the screen goes black, no images are made, and Windows may turn the display off; it picks up again by itself |
+| **Quality** | the model (Stable Diffusion fills the screen; DALL·E Mega's squares sit on a blurred backdrop), the image size (the screen's own, twice it (default), or as large as the upscaler allows, 2048 px on the short side; the tab shows what that is for your monitor), steps, the safety filter, the text and word checks |
+| **Saving** | save every image or not, the folder, deleting day folders after N days (never favorites), and how much disk a day takes |
+
+"Save and start screensaver" in the standalone window saves and starts it. A screensaver that is already
+running keeps its settings until it is restarted, or until you change them in it with O.
 
 It runs full screen **until you close it**: clicking does nothing (the pointer shows while you move the
 mouse and hides again after 3 s). Close it with Esc or Q, right-click → Exit, or Alt+F4.
@@ -175,7 +188,8 @@ The next image is made while the current one is showing, so the GPU works ~10 s 
 in between. While it runs, Windows won't blank the display or go to sleep. Run it *or* the main app:
 both load a model into the same GPU, and together they are slow. Log: `screensaver.log`.
 
-Command line: `uv run screensaver.pyw --settings` (open settings first), `--monitor 2` (that monitor).
+Command line: `uv run screensaver.pyw --settings` (open settings first), `--monitor 2` (that monitor);
+`uv run screensaver_settings.py` (settings only).
 
 **Day movie.** `uv run daymovie.py [2026-11-06]` turns a day folder (default: the latest) into an MP4
 next to it (`outputs\screensaver\2026-11-06.mp4`), with ffmpeg. Every frame is drawn the way the
@@ -245,7 +259,8 @@ GPU memory: check Task Manager → Performance → GPU → Dedicated GPU memory.
 - `dalle_core.py`: DALL·E Mega engine, upscaling, saving, model switching (shared)
 - `sd_engine.py`: Stable Diffusion 1.5 engine (diffusers); `Settings.init_image` + `strength` for img2img
 - `download_weights.py`: weight downloader and verifier
-- `make_shortcuts.py`: creates the two double-click shortcuts (Windows)
+- `screensaver_settings.py`: the screensaver's settings window and settings file (runs on its own too)
+- `make_shortcuts.py`: creates the double-click shortcuts (Windows)
 - `icon.ico`, `icon.png`: app icon (drawn by DALL·E Mega itself)
 
 Note for changes to `app.pyw`: `torch` must be imported before PySide6, or generation crashes with

@@ -3,6 +3,7 @@ turned into a scene by a local LLM (Ollama), today's news and Wikipedia's "on th
 Stable Diffusion 1.5 (or DALL·E Mega) on this PC.
 
 Launch with the "Image Screensaver" shortcut, or:  uv run screensaver.pyw [--settings] [--monitor N]
+Settings: the "Screensaver Settings" shortcut, uv run screensaver_settings.py, or O while it runs.
 
 Runs full screen until closed (Esc / Q, right-click → Exit, or Alt+F4); clicking doesn't close it.
 Keys: → or Space = next image · S = favorite · C = captions · P = prompt · O = settings · H = help ·
@@ -19,7 +20,6 @@ import shutil
 import sys
 import threading
 import time
-import traceback
 from dataclasses import replace
 from datetime import datetime
 from pathlib import Path
@@ -37,69 +37,22 @@ if sys.stdout is None or sys.stderr is None:  # pythonw has no console; keep lib
 import torch  # noqa: F401,E402
 
 from PIL import Image, ImageEnhance, ImageFilter
-from PySide6.QtCore import QEasingCurve, QObject, QRect, QRectF, Qt, QThread, QTimer, QVariantAnimation, Signal, Slot
-from PySide6.QtGui import (QColor, QFont, QGuiApplication, QIcon, QImage, QKeySequence, QLinearGradient, QPainter,
+from PySide6.QtCore import QEasingCurve, QObject, QRect, Qt, QThread, QTimer, QVariantAnimation, Signal, Slot
+from PySide6.QtGui import (QColor, QFont, QGuiApplication, QIcon, QImage, QLinearGradient, QPainter,
                            QPixmap)
-from PySide6.QtWidgets import (QApplication, QCheckBox, QComboBox, QDialog, QDialogButtonBox, QFormLayout, QGroupBox,
-                               QHBoxLayout, QLabel, QLineEdit, QMenu, QMessageBox, QPlainTextEdit, QPushButton,
-                               QSpinBox, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import QApplication, QDialog, QMenu, QWidget
 
 import hourlight  # numpy + PIL: grades frames to the light of the hour
 import realworld  # light: requests + download_weights; models load in the worker
+from screensaver_settings import (APP_NAME, ICON_PATH, SETTINGS_PATH, SettingsDialog, clock_text, is_quiet,  # noqa: E402
+                                  load_settings, physical_size, save_root, save_settings, save_size)
 
-APP_NAME = "Image Screensaver"
-SETTINGS_PATH = HERE / "screensaver_settings.json"
-SAVE_DIR = HERE / "outputs" / "screensaver"  # default; settings can change it
-ICON_PATH = HERE / "icon.ico"
-FADE_MS = 2500
 JPEG_QUALITY = 92
 TEXT_REDOS = 2  # an image the local LLM sees text in is made again (new seed) up to this many times
 WORD_REDOS = 2  # a words draft that shows none of its words is drawn again (new seed) up to this many times
-SAVE_SCALE = 2  # saved images: twice the monitor's resolution (800 × 480 → 1600 × 960) …
-MAX_SHORT_SIDE = 2048  # … but no more than the 4× upscaler can genuinely add (512 × 4)
 DAY_FOLDER = re.compile(r"^\d{4}-\d{2}-\d{2}$")
-DEFAULTS = {
-    "place": None,  # {"name", "country", "lat", "lon"} from the city lookup
-    "city": "",
-    "use_weather": True,
-    "use_words": False,  # a few random words → scene, by a local LLM through Ollama
-    "llm_words": 3,  # words per image
-    "llm_model": realworld.DEFAULT_LLM,
-    "ollama_url": realworld.OLLAMA_URL,
-    "text_check": True,  # the local LLM looks at each image; text in it → made again (needs a vision model)
-    "word_check": True,  # … and at each words draft; none of the words in it → drawn again
-    "use_news": True,
-    "use_history": True,
-    "feeds": realworld.DEFAULT_FEEDS,
-    "skip_distressing": True,
-    "skip_words": realworld.DEFAULT_SKIP_WORDS,
-    "monitor": None,  # QScreen.name(); None → primary
-    "seconds": 60,
-    "captions": True,
-    "clock": True,
-    "model": "sd",
-    "safety": True,
-    "steps": 25,
-    "save_all": True,  # every image + JSON sidecar, in a folder per day
-    "save_dir": None,  # None → outputs/screensaver
-    "keep_days": 0,  # delete day folders older than this many days; 0 = keep everything
-}
 HELP = ("Right-click: menu   ·   → / Space: next   ·   S: favorite   ·   C: captions   ·   P: prompt   ·   "
         "O: settings   ·   Esc: exit")
-
-
-def load_settings() -> dict:
-    cfg = dict(DEFAULTS)
-    if SETTINGS_PATH.exists():
-        try:
-            cfg.update(json.loads(SETTINGS_PATH.read_text(encoding="utf-8")))
-        except (OSError, ValueError):
-            logging.exception("could not read settings; using defaults")
-    return cfg
-
-
-def save_settings(cfg: dict) -> None:
-    SETTINGS_PATH.write_text(json.dumps(cfg, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def keep_display_awake(on: bool) -> None:
@@ -144,16 +97,6 @@ def compose(img: Image.Image, w: int, h: int) -> Image.Image:
     front = img.resize((round(img.width * fit), round(img.height * fit)), Image.LANCZOS)
     back.paste(front, ((w - front.width) // 2, (h - front.height) // 2))
     return back
-
-
-def save_size(screen_w: int, screen_h: int) -> tuple[int, int]:
-    """Size of the saved image: SAVE_SCALE × the screen, short side capped at MAX_SHORT_SIDE."""
-    scale = min(SAVE_SCALE, MAX_SHORT_SIDE / min(screen_w, screen_h))
-    return max(screen_w, round(screen_w * scale)), max(screen_h, round(screen_h * scale))
-
-
-def save_root(cfg: dict) -> Path:
-    return Path(cfg["save_dir"]) if cfg.get("save_dir") else SAVE_DIR
 
 
 def _ascii(text: str) -> str:
@@ -215,10 +158,6 @@ def screen_for(name: str | None):
     return QGuiApplication.primaryScreen()
 
 
-def physical_size(screen) -> tuple[int, int]:
-    g, dpr = screen.geometry(), screen.devicePixelRatio()
-    return round(g.width() * dpr), round(g.height() * dpr)
-
 
 # --------------------------------------------------------------------------- worker
 
@@ -278,7 +217,7 @@ class Producer(QObject):
                 self.status.emit("Gathering today's weather, words, news and history…")
                 self.sources = realworld.Sources(self.cfg)
             w, h = self.size  # the monitor, in physical pixels
-            sw, sh = save_size(w, h)  # made (and saved) at this size, shown scaled down to the monitor
+            sw, sh = save_size(w, h, self.cfg.get("resolution", "2x"))  # made (and saved) at this size, shown fitted to the monitor
             model = self.cfg["model"]
             for _attempt in range(3):
                 idea = self.sources.next()
@@ -427,265 +366,6 @@ class Producer(QObject):
         return str(path)
 
 
-# --------------------------------------------------------------------------- settings
-
-
-class SettingsDialog(QDialog):
-    def __init__(self, cfg: dict, parent=None):
-        super().__init__(parent)
-        self.setWindowTitle(f"{APP_NAME} settings")
-        self.cfg = dict(cfg)
-        self.place = cfg.get("place")
-        self.setMinimumWidth(560)
-
-        # where & what
-        self.city = QLineEdit(cfg.get("city") or (self.place or {}).get("name", ""))
-        self.city.setPlaceholderText("Your town or city, e.g. Utrecht")
-        lookup = QPushButton("Look up")
-        lookup.clicked.connect(self._lookup)
-        self.city.returnPressed.connect(self._lookup)
-        self.place_label = QLabel(self._place_text())
-        city_row = QHBoxLayout()
-        city_row.addWidget(self.city, 1)
-        city_row.addWidget(lookup)
-
-        self.use_weather = QCheckBox("Weather, time of day and season where you are")
-        self.use_words = QCheckBox("Random words, made into a local scene by an LLM on this PC (Ollama)")
-        self.use_words.setChecked(cfg.get("use_words", False))
-        self.use_words.setToolTip("Words from words.txt; settings, viewpoints, styles from scene_parts.txt;\n"
-                                  "instructions for the LLM in llm_prompt.txt (edits apply to the next image).")
-        self.llm_words = QSpinBox()
-        self.llm_words.setRange(1, 5)
-        self.llm_words.setSuffix(" words per image")
-        self.llm_words.setValue(int(cfg.get("llm_words", 3)))
-        self.llm_words.setToolTip("A small model uses two words more reliably than three (and SD fits them in better).")
-        self.llm_model = QLineEdit(cfg.get("llm_model") or realworld.DEFAULT_LLM)
-        self.llm_model.setToolTip("Any Ollama model name. It is pulled once if it isn't there yet.\n"
-                                  "The text check below needs one that can see images (qwen3.5 can).")
-        words_row = QHBoxLayout()
-        words_row.addWidget(self.llm_words)
-        words_row.addWidget(self.llm_model, 1)
-        for w in (self.llm_words, self.llm_model):
-            self.use_words.toggled.connect(w.setEnabled)
-            w.setEnabled(self.use_words.isChecked())
-        self.use_news = QCheckBox("News headlines (from the feeds below)")
-        self.use_history = QCheckBox("Wikipedia: on this day in history")
-        for box, key in ((self.use_weather, "use_weather"), (self.use_news, "use_news"), (self.use_history, "use_history")):
-            box.setChecked(cfg.get(key, True))
-        self.feeds = QPlainTextEdit("\n".join(cfg.get("feeds") or []))
-        self.feeds.setFixedHeight(80)
-        self.feeds.setToolTip("RSS or Atom feeds, one per line. English headlines work best.")
-        self.use_news.toggled.connect(self.feeds.setEnabled)
-        self.feeds.setEnabled(self.use_news.isChecked())
-        self.skip = QCheckBox("Skip distressing topics containing these words:")
-        self.skip.setChecked(cfg.get("skip_distressing", True))
-        self.skip_words = QLineEdit(cfg.get("skip_words", realworld.DEFAULT_SKIP_WORDS))
-        self.skip_words.setCursorPosition(0)
-        self.skip.toggled.connect(self.skip_words.setEnabled)
-        self.skip_words.setEnabled(self.skip.isChecked())
-
-        what = QGroupBox("Based on")
-        wf = QFormLayout(what)
-        wf.addRow("Location", city_row)
-        wf.addRow("", self.place_label)
-        wf.addRow(self.use_weather)
-        wf.addRow(self.use_words)
-        wf.addRow("LLM", words_row)
-        wf.addRow(self.use_news)
-        wf.addRow("Feeds", self.feeds)
-        wf.addRow(self.use_history)
-        wf.addRow(self.skip)
-        wf.addRow("", self.skip_words)
-
-        # display
-        self.monitor = QComboBox()
-        for i, s in enumerate(QGuiApplication.screens(), 1):
-            w, h = physical_size(s)
-            primary = "  (main)" if s == QGuiApplication.primaryScreen() else ""
-            self.monitor.addItem(f"{i}: {w} × {h}  {s.model() or s.name()}{primary}", s.name())
-        idx = self.monitor.findData(cfg.get("monitor"))
-        self.monitor.setCurrentIndex(idx if idx >= 0 else
-                                     self.monitor.findData(QGuiApplication.primaryScreen().name()))
-        identify = QPushButton("Identify monitors")
-        identify.clicked.connect(self._identify)
-        mon_row = QHBoxLayout()
-        mon_row.addWidget(self.monitor, 1)
-        mon_row.addWidget(identify)
-        self.seconds = QSpinBox()
-        self.seconds.setRange(10, 3600)
-        self.seconds.setSuffix(" s")
-        self.seconds.setValue(int(cfg.get("seconds", 60)))
-        self.seconds.setToolTip("How long each image stays up. A new image takes ~5–25 s to make.")
-        self.captions = QCheckBox("Show what each image is based on")
-        self.captions.setChecked(cfg.get("captions", True))
-        self.clock = QCheckBox("Show a clock")
-        self.clock.setChecked(cfg.get("clock", True))
-        self.model = QComboBox()
-        self.model.addItem("Stable Diffusion 1.5  (fills the screen)", "sd")
-        self.model.addItem("DALL·E Mega  (square, on a blurred backdrop)", "mega")
-        self.model.setCurrentIndex(max(0, self.model.findData(cfg.get("model", "sd"))))
-        self.safety = QCheckBox("Stable Diffusion safety filter")
-        self.safety.setChecked(cfg.get("safety", True))
-        self.text_check = QCheckBox("Make an image again when the local LLM sees text in it (watermarks, signatures)")
-        self.text_check.setChecked(cfg.get("text_check", True))
-        self.text_check.setToolTip("SD 1.5 adds fake watermarks and lettering that no negative prompt stops.\n"
-                                   "The LLM model above looks at each image (~1 s); text → new seed, up to twice.")
-        self.word_check = QCheckBox("Draw a random-words image again when the local LLM sees none of the words in it")
-        self.word_check.setChecked(cfg.get("word_check", True))
-        self.word_check.setToolTip("SD 1.5 often draws the setting and drops small or odd subjects (a third of the\n"
-                                   "words showed in a test). The LLM model above looks at each first draft, before the\n"
-                                   "night light is added (~1 s a word); none of the words → new seed, up to twice.")
-
-        disp = QGroupBox("Display")
-        df = QFormLayout(disp)
-        df.addRow("Monitor", mon_row)
-        df.addRow("Each image", self.seconds)
-        df.addRow("Model", self.model)
-        df.addRow("", self.captions)
-        df.addRow("", self.clock)
-        df.addRow("", self.safety)
-        df.addRow("", self.text_check)
-        df.addRow("", self.word_check)
-
-        # saving
-        self.save_all = QCheckBox("Save every image as JPEG, with a .json file of its details next to it")
-        self.save_all.setChecked(cfg.get("save_all", True))
-        self.save_dir = QLineEdit(str(save_root(cfg)))
-        self.save_dir.setReadOnly(True)
-        change = QPushButton("Change…")
-        change.clicked.connect(self._choose_folder)
-        open_btn = QPushButton("Open")
-        open_btn.clicked.connect(lambda: (Path(self.save_dir.text()).mkdir(parents=True, exist_ok=True),
-                                          os.startfile(self.save_dir.text())))
-        dir_row = QHBoxLayout()
-        dir_row.addWidget(self.save_dir, 1)
-        dir_row.addWidget(change)
-        dir_row.addWidget(open_btn)
-        self.keep_days = QSpinBox()
-        self.keep_days.setRange(0, 3650)
-        self.keep_days.setSpecialValueText("never (keep everything)")
-        self.keep_days.setSuffix(" days")
-        self.keep_days.setValue(int(cfg.get("keep_days", 0) or 0))
-        self.keep_days.setToolTip("Day folders older than this are deleted (images and their .json files).\n"
-                                  "Favorites (S key) are never deleted.")
-        self.estimate = QLabel()
-        self.estimate.setWordWrap(True)
-        save_box = QGroupBox("Saving")
-        sf = QFormLayout(save_box)
-        sf.addRow(self.save_all)
-        sf.addRow("Folder", dir_row)
-        sf.addRow("Delete after", self.keep_days)
-        sf.addRow("", self.estimate)
-        for w in (self.save_dir, change, self.keep_days):
-            self.save_all.toggled.connect(w.setEnabled)
-            w.setEnabled(self.save_all.isChecked())
-        self.monitor.currentIndexChanged.connect(self._update_estimate)
-        self.seconds.valueChanged.connect(self._update_estimate)
-        self.save_all.toggled.connect(self._update_estimate)
-        self._update_estimate()
-
-        buttons = QDialogButtonBox(QDialogButtonBox.StandardButton.Ok | QDialogButtonBox.StandardButton.Cancel)
-        buttons.button(QDialogButtonBox.StandardButton.Ok).setText("Start")
-        buttons.accepted.connect(self._accept)
-        buttons.rejected.connect(self.reject)
-        layout = QVBoxLayout(self)
-        layout.addWidget(what)
-        layout.addWidget(disp)
-        layout.addWidget(save_box)
-        layout.addWidget(QLabel("<small>Weather: Open-Meteo (only the coordinates of your town are sent). "
-                                "Three words: Ollama on this PC, nothing leaves it. History: Wikipedia. Names of people and organisations are left out of "
-                                "image prompts; captions show the real text.</small>", wordWrap=True))
-        layout.addWidget(buttons)
-
-    def _choose_folder(self) -> None:
-        from PySide6.QtWidgets import QFileDialog
-
-        folder = QFileDialog.getExistingDirectory(self, "Folder for saved images", self.save_dir.text())
-        if folder:
-            self.save_dir.setText(str(Path(folder)))
-
-    def _update_estimate(self) -> None:
-        if not self.save_all.isChecked():
-            self.estimate.setText("Nothing is saved; press S to keep a favorite.")
-            return
-        screen = next((s for s in QGuiApplication.screens() if s.name() == self.monitor.currentData()),
-                      QGuiApplication.primaryScreen())
-        w, h = save_size(*physical_size(screen))
-        mb = w * h * 0.3 / 1e6  # typical JPEG q92 size for these images
-        per_day = mb * 86400 / max(self.seconds.value(), 15) / 1000
-        self.estimate.setText(f"Saved at {w} × {h}, about {mb:.1f} MB each: ≈ {per_day:.1f} GB per day "
-                              f"of non-stop running.")
-
-    def _place_text(self) -> str:
-        p = self.place
-        return f"✓ {p['name']}, {p.get('country', '')}  ({p['lat']:.2f}, {p['lon']:.2f})" if p else "Not set yet"
-
-    def _lookup(self) -> bool:
-        query = self.city.text().strip()
-        if not query:
-            self.place = None
-            self.place_label.setText(self._place_text())
-            return True
-        QApplication.setOverrideCursor(Qt.CursorShape.WaitCursor)
-        try:
-            p = realworld.geocode(query)
-        except Exception as e:
-            p = None
-            QMessageBox.warning(self, APP_NAME, f"Could not look up “{query}”:\n{e}")
-        finally:
-            QApplication.restoreOverrideCursor()
-        if p is None:
-            self.place_label.setText(f"“{query}” not found")
-            return False
-        self.place = vars(p)
-        self.place_label.setText(self._place_text())
-        return True
-
-    def _identify(self) -> None:
-        labels = []
-        for i, s in enumerate(QGuiApplication.screens(), 1):
-            lbl = QLabel(str(i))
-            lbl.setWindowFlags(Qt.WindowType.FramelessWindowHint | Qt.WindowType.WindowStaysOnTopHint | Qt.WindowType.Tool)
-            lbl.setAlignment(Qt.AlignmentFlag.AlignCenter)
-            lbl.setStyleSheet("background: #111; color: white; border: 4px solid #4aa3ff;")
-            f = lbl.font()
-            f.setPointSize(72)
-            f.setBold(True)
-            lbl.setFont(f)
-            g = s.geometry()
-            lbl.setGeometry(g.x() + g.width() // 2 - 110, g.y() + g.height() // 2 - 110, 220, 220)
-            lbl.show()
-            labels.append(lbl)
-        QTimer.singleShot(2500, lambda: [l.close() for l in labels])
-        self._identify_labels = labels  # keep alive
-
-    def _accept(self) -> None:
-        city = self.city.text().strip()
-        if city and (not self.place or self.place.get("name", "").lower() not in city.lower()):
-            if not self._lookup():
-                return
-        if (self.use_weather.isChecked() or self.use_words.isChecked()) and not self.place:
-            if QMessageBox.question(self, APP_NAME, "No location set: weather scenes will only follow your clock "
-                                    "and the calendar. Continue?") != QMessageBox.StandardButton.Yes:
-                return
-        self.cfg.update(
-            place=self.place, city=city,
-            use_weather=self.use_weather.isChecked(), use_news=self.use_news.isChecked(),
-            use_words=self.use_words.isChecked(), llm_model=self.llm_model.text().strip() or realworld.DEFAULT_LLM,
-            use_history=self.use_history.isChecked(),
-            feeds=[l.strip() for l in self.feeds.toPlainText().splitlines() if l.strip()],
-            skip_distressing=self.skip.isChecked(), skip_words=self.skip_words.text(),
-            monitor=self.monitor.currentData(), seconds=self.seconds.value(),
-            captions=self.captions.isChecked(), clock=self.clock.isChecked(),
-            model=self.model.currentData(), safety=self.safety.isChecked(), text_check=self.text_check.isChecked(),
-            word_check=self.word_check.isChecked(), llm_words=self.llm_words.value(),
-            save_all=self.save_all.isChecked(),
-            save_dir=None if Path(self.save_dir.text()) == SAVE_DIR else self.save_dir.text(),
-            keep_days=self.keep_days.value(),
-        )
-        self.accept()
-
-
 # --------------------------------------------------------------------------- full-screen window
 
 
@@ -712,11 +392,11 @@ class Screensaver(QWidget):
         self.message = "Starting…"
         self.toast, self.toast_until = "", 0.0
         self.help_until = time.time() + 10
+        self.quiet = False  # in the quiet hours: black screen, nothing made, the display may sleep
 
         self.anim = QVariantAnimation(self)
         self.anim.setStartValue(0.0)
         self.anim.setEndValue(1.0)
-        self.anim.setDuration(FADE_MS)
         self.anim.setEasingCurve(QEasingCurve.Type.InOutSine)
         self.anim.valueChanged.connect(self._on_fade)
 
@@ -731,6 +411,9 @@ class Screensaver(QWidget):
         self.hide_cursor.setInterval(3000)
         self.hide_cursor.timeout.connect(lambda: self.setCursor(Qt.CursorShape.BlankCursor))
         self.setMouseTracking(True)
+        self.quiet_timer = QTimer(self)
+        self.quiet_timer.timeout.connect(self._check_quiet)
+        self.quiet_timer.start(20_000)
 
         self.worker_thread = QThread(self)
         self.producer = Producer(cfg, (1920, 1080))
@@ -770,19 +453,39 @@ class Screensaver(QWidget):
 
     def start(self) -> None:
         self.place_on_screen()
+        self._check_quiet()
         self._request()
+
+    def _check_quiet(self) -> None:
+        quiet = is_quiet(self.cfg)
+        if quiet == self.quiet:
+            return
+        self.quiet = quiet
+        if quiet:
+            logging.info("quiet hours: black screen until %s", self.cfg.get("quiet_to"))
+            self.display_timer.stop()
+            keep_display_awake(False)
+        else:
+            logging.info("quiet hours over")
+            keep_display_awake(True)
+            self.due = True
+            if self.pending is not None:
+                self._advance()
+            else:
+                self._request()
+        self.update()
 
     # ----- frame flow
 
     def _request(self) -> None:
-        if not self.producing:
+        if not self.producing and not self.quiet:
             self.producing = True
             self.request_frame.emit()
 
     @Slot(dict)
     def on_produced(self, frame: dict) -> None:
         self.producing = False
-        if self.current is None or self.due:
+        if (self.current is None or self.due) and not self.quiet:
             self._show(frame)
         else:
             self.pending = frame
@@ -795,14 +498,20 @@ class Screensaver(QWidget):
         self.current, self.current_meta = pm, frame
         self.message = ""
         self.anim.stop()
-        self.fade = 0.0 if self.previous is not None else 1.0
-        if self.previous is not None:
+        fade_ms = int(float(self.cfg.get("fade_seconds", 2.5)) * 1000)
+        self.fade = 0.0 if self.previous is not None and fade_ms > 0 else 1.0
+        if self.fade < 1.0:
+            self.anim.setDuration(fade_ms)
             self.anim.start()
+        else:
+            self.previous, self.previous_meta = None, None
         self.update()
         self.display_timer.start(int(self.cfg.get("seconds", 60)) * 1000)
         self._request()  # start on the next one right away
 
     def _advance(self) -> None:
+        if self.quiet:
+            return
         if self.pending is not None:
             frame, self.pending = self.pending, None
             self._show(frame)
@@ -855,6 +564,9 @@ class Screensaver(QWidget):
             super().keyPressEvent(e)
 
     def _next(self) -> None:
+        if self.quiet:
+            self._toast(f"Quiet hours until {self.cfg.get('quiet_to')}")
+            return
         if self.pending is not None:
             self.display_timer.stop()
             self._advance()
@@ -908,7 +620,7 @@ class Screensaver(QWidget):
     def _open_settings(self) -> None:
         self.display_timer.stop()
         self.setCursor(Qt.CursorShape.ArrowCursor)
-        dlg = SettingsDialog(self.cfg, self)
+        dlg = SettingsDialog(self.cfg, self, mode="running")
         accepted = dlg.exec() == QDialog.DialogCode.Accepted
         self.setCursor(Qt.CursorShape.BlankCursor)
         if accepted:
@@ -916,8 +628,10 @@ class Screensaver(QWidget):
             save_settings(self.cfg)
             self.pending = None  # made with the old settings
             self.place_on_screen()
+            self.quiet = not is_quiet(self.cfg)  # force _check_quiet to apply the (new) quiet hours
+            self._check_quiet()
             self._toast("Settings saved; new images follow")
-        if self.current is not None:
+        if self.current is not None and not self.quiet:
             self.display_timer.start(3000 if accepted else int(self.cfg.get("seconds", 60)) * 1000)
         self._request()
 
@@ -957,6 +671,10 @@ class Screensaver(QWidget):
         p.setRenderHint(QPainter.RenderHint.Antialiasing)
         p.fillRect(self.rect(), Qt.GlobalColor.black)
         r = self.rect()
+        if self.quiet:
+            if time.time() < self.toast_until:
+                self._text(p, r, self.toast, 0.016, Qt.AlignmentFlag.AlignCenter, QColor(255, 255, 255, 120))
+            return
         if self.previous is not None and self.fade < 1.0:
             p.drawPixmap(r, self.previous)
         if self.current is not None:
@@ -1041,7 +759,7 @@ class Screensaver(QWidget):
         for dx, color in ((2, QColor(0, 0, 0, 150)), (0, QColor(255, 255, 255, 235))):
             p.setPen(color)
             p.drawText(box.translated(dx, dx), int(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignBottom),
-                       f"{now:%H:%M}")
+                       clock_text(now, self.cfg.get("clock_24h", True)))
         p.setFont(self._font(0.017))
         date_box = QRect(box.x(), box.bottom() + 2, box.width(), int(r.height() * 0.03))
         for dx, color in ((2, QColor(0, 0, 0, 150)), (0, QColor(255, 255, 255, 200))):
@@ -1087,7 +805,7 @@ def main() -> None:
         if 1 <= args.monitor <= len(screens):
             cfg["monitor"] = screens[args.monitor - 1].name()
     if args.settings or not SETTINGS_PATH.exists():
-        dlg = SettingsDialog(cfg)
+        dlg = SettingsDialog(cfg, mode="first")
         if dlg.exec() != QDialog.DialogCode.Accepted:
             return
         cfg = dlg.cfg

@@ -31,7 +31,7 @@ command line and a full-screen "screensaver" that paints the world outside as it
 ```bash
 uv sync                               # Python 3.12 + CUDA PyTorch and the rest
 uv run download_weights.py --all      # ≈ 8 GB of weights into pretrained/
-uv run make_shortcuts.py              # double-click shortcuts for the app and the screensaver
+uv run make_shortcuts.py              # shortcuts: Images, Image Screensaver, Screensaver Settings
 uv run generate.py "a watercolor painting of a lighthouse at dusk" --open
 ```
 

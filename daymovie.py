@@ -109,6 +109,7 @@ class Frames:
         (self.w, self.h), self.size = screen, size
         self.dpr = size[1] / screen[1]  # 2.0 for 800 x 480 saved at 1600 x 960
         self.captions, self.clock, self.show_prompt = captions, clock, prompt
+        self.clock_24h = True  # as the screensaver's clock_24h setting
         self.base_font = QFont(QApplication.font())  # the widget's font: Qt's default
         self.ease = QEasingCurve(QEasingCurve.Type.InOutSine).valueForProgress  # the screensaver's fade
 
@@ -199,7 +200,7 @@ class Frames:
         for dx, color in ((2, QColor(0, 0, 0, 150)), (0, QColor(255, 255, 255, 235))):
             p.setPen(color)
             p.drawText(box.translated(dx, dx), int(Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignBottom),
-                       f"{now:%H:%M}")
+                       f"{now:%H:%M}" if self.clock_24h else f"{now:%I:%M}".lstrip("0") + f" {now:%p}".lower())
         p.setFont(self._font(0.017))
         date_box = QRect(box.x(), box.bottom() + 2, box.width(), int(r.height() * 0.03))
         for dx, color in ((2, QColor(0, 0, 0, 150)), (0, QColor(255, 255, 255, 200))):
@@ -268,6 +269,7 @@ def main() -> None:
 
     app = QApplication(sys.argv[:1])  # noqa: F841  fonts and text rendering as in the screensaver
     frames = Frames(screen, (pw, ph), args.captions, args.clock, args.prompt)
+    frames.clock_24h = cfg.get("clock_24h", True)
     seconds = min(args.seconds, args.length / len(items))  # per image
     fade = min(args.fade, seconds / 4)
     per_image, fade_frames = seconds * args.fps, round(fade * args.fps)
